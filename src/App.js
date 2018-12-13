@@ -8,6 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="productGrid">
+        hello
           <ProductView products={this.props.products}/>
         </div>
       </div>
