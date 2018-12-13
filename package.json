@@ -1,29 +1,54 @@
 {
-  "name": "ocs",
+  "name": "landing",
   "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "lodash": "^4.17.11",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
-    "react-rating": "^1.4.1",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "2.0.5",
-    "react-star-rating-component": "^1.4.1"
-  },
+  "description": "landing page",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "webpack-dev-server --inline",
+    "build": "webpack --config webpack.config.prod.js"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
+    "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
+    "@fortawesome/react-fontawesome": "0.1.0-11",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-es2015-destructuring": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "css-loader": "^0.28.2",
+    "font-awesome": "^4.7.0",
+    "i18next": "11.3.3",
+    "i18next-xhr-backend": "1.5.1",
+    "js-base64": "^2.4.3",
+    "lodash": "^4.17.10",
+    "marked": "^0.3.6",
+    "qs": "^6.5.2",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.32.1",
+    "react-device-detect": "1.4.5",
+    "react-dom": "^16.2.0",
+    "react-i18next": "7.7.0",
+    "react-native-uuid": "^1.4.9",
+    "react-number-format": "3.4.2",
+    "react-rating": "^1.3.0",
+    "react-responsive-modal": "3.0.3",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-select": "^1.2.1",
+    "react-spinkit": "3.0.0",
+    "react-star-rating-component": "^1.4.1",
+    "react-telephone-input": "^4.71.11",
+    "style-loader": "^0.19.0",
+    "uglifyjs-webpack-plugin": "^1.1.0",
+    "universal-cookie": "^2.0.8",
+    "webpack": "^3.8.1",
+    "webpack-uglify-js-plugin": "^1.1.9"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "devDependencies": {
+    "json-loader": "^0.5.7",
+    "webpack-dev-server": "^2.9.4"
+  }
 }
