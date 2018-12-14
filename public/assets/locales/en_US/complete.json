@@ -1,0 +1,14 @@
+{
+    "message" : "Order is complete!",
+    "notice" : "Please wait for a couple of days for the item to be delivered.",
+    "order": {
+        "number": "Order Number",
+        "amount": "Order Amount",
+        "status": "Order Status"
+    },
+    "shipping": {
+        "address": "Delivery Address",
+        "tracking": "Tracking ID"
+    },
+    "homePage": "BACK TO HOMEPAGE"
+}

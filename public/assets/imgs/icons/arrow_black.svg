@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="13px" viewBox="0 0 35 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Online-courses-page/Premium-Course" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-471.000000, -1047.000000)" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Group-10" transform="translate(354.000000, 625.000000)" stroke="#2F2E2E" stroke-width="2">
+            <g id="arrow-right" transform="translate(118.000000, 423.000000)">
+                <path d="M0,5.5 L30,5.5" id="Shape"></path>
+                <polyline id="Shape" points="27.5 0 33 5.5 27.5 11"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

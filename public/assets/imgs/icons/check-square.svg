@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>check-square-09</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style-Guide" transform="translate(-580.000000, -414.000000)" fill="#3966E6" fill-rule="nonzero">
+            <g id="Icons" transform="translate(579.000000, 41.000000)">
+                <g id="Form-Elements-Icons" transform="translate(0.000000, 174.000000)">
+                    <g id="Icons" transform="translate(0.000000, 47.000000)">
+                        <g id="check-square-09" transform="translate(1.000000, 152.000000)">
+                            <path d="M14,0 L2,0 C0.9,0 0,0.9 0,2 L0,14 C0,15.1 0.9,16 2,16 L14,16 C15.1,16 16,15.1 16,14 L16,2 C16,0.9 15.1,0 14,0 Z M7,11.4 L3.6,8 L5,6.6 L7,8.6 L11,4.6 L12.4,6 L7,11.4 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

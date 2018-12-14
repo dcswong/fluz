@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>logo-messenger</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style-Guide" transform="translate(-580.000000, -157.000000)" fill="#1C2D5B" fill-rule="nonzero">
+            <g id="Icons" transform="translate(579.000000, 41.000000)">
+                <g id="App-Header-Icons" transform="translate(1.000000, 44.000000)">
+                    <g id="Icons" transform="translate(0.000000, 31.000000)">
+                        <g id="logo-messenger" transform="translate(0.000000, 41.000000)">
+                            <path d="M12,0 C5.439,0 0.121,4.973 0.121,11.108 C0.121,14.598 1.842,17.712 4.534,19.748 L4.534,24 L8.588,21.751 C9.669,22.054 10.814,22.216 12,22.216 C18.561,22.216 23.879,17.243 23.879,11.108 C23.879,4.973 18.561,0 12,0 Z M13.251,14.896 L10.179,11.704 L4.262,14.976 L10.749,8.092 L13.821,11.284 L19.738,8.012 L13.251,14.896 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

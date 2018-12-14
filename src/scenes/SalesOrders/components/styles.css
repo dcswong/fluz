@@ -1,0 +1,38 @@
+.screenContainer {
+}
+  
+.popover {
+    border-radius: 4px;
+    width: 300px;
+    height: 300px;
+    /* margin: 10px auto;
+    padding: 15px;
+    position: absolute;
+    top: 100%; */
+    background-color: black;
+    /* left: -50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+}
+  
+.popover-container {
+    width: 200px;
+    /* margin: 50px auto; */
+    position: relative;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #99A1B5;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #99A1B5;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #99A1B5;
+}
+
+#summaryContainer::-webkit-scrollbar {  
+    display: none;
+}

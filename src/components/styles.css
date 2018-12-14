@@ -1,0 +1,65 @@
+.headerContainer {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    display: flex;
+    flex-direction: row;
+
+    max-height: 65px;
+    padding: 20px 0px;
+    margin: 0px
+}
+
+.modal-backdrop {
+    opacity: 0 !important;
+}
+
+#imageGalleryView::-webkit-scrollbar {  
+    display: none;
+}
+
+#imageCarousel {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+}
+
+#imageCarousel > .carousel-indicators {
+    background-color: #000000;
+    width: auto;
+    /* padding-left: 5px;
+    padding-right: 5px; */
+    margin-left: 0;
+    left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+#imageCarousel > .carousel-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#imageCarousel > .carousel-indicators > li {
+    border-width: 2px;
+    width: 8px;
+    height: 8px;
+    margin: 5px;
+    background-color: #ffffff;
+}
+
+#imageCarousel > .carousel-indicators > .active {
+    background-color: #3966E6;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

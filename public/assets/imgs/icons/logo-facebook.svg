@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>logo-facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style-Guide" transform="translate(-760.000000, -156.000000)" fill-rule="nonzero">
+            <g id="Icons" transform="translate(579.000000, 41.000000)">
+                <g id="App-Header-Icons" transform="translate(1.000000, 44.000000)">
+                    <g id="Icons" transform="translate(0.000000, 31.000000)">
+                        <g id="logo-facebook" transform="translate(180.000000, 40.000000)">
+                            <path d="M23,24 C23.552285,24 24,23.552285 24,23 L24,1 C24,0.447715 23.552285,0 23,0 L1,0 C0.447715,0 0,0.447715 0,1 L0,23 C0,23.552285 0.447715,24 1,24 L23,24 Z" id="White_4_" fill="#2F4980"></path>
+                            <path d="M13.259585,23.7 L13.259585,14.2 L10,14.2 L10,10.7 L13.259585,10.7 L13.259585,8.11269 C13.259585,5.012805 15.15289,3.32486 17.9182,3.32486 C19.24281,3.32486 20.381245,3.42348 20.71302,3.46756 L20.71302,6.70712 L18.79513,6.70799 C17.2912,6.70799 17,7.422635 17,8.471325 L17,10.7 L20.5,10.7 L20,14.2 L17,14.2 L17,23.7 L13.259585,23.7 Z" id="White_2_" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

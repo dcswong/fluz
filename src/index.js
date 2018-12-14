@@ -1,27 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import { BrowserRouter as Router, Switch, Route, Redirect, Link } from 'react-router-dom';
+import { render } from 'react-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { I18nextProvider } from 'react-i18next';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStroopwafel, faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
-import * as serviceWorker from './serviceWorker';
-import Home from './modules/homepage';
 
-ReactDOM.render(
-  <App />,
-  // <Router>
-  //
-  //   <ul>
-  //     <li><Link to="/app">Testing</Link></li>
-  //   </ul>
-  //
-  //   <Switch>
-  //     <Route exact path="/home" component={Home}/>
-  //   </Switch>
-  // </Router>,
-  document.getElementById('root'));
+import i18n from './helpers/i18n';
+import Frame from './scenes/frame';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+library.add(faStroopwafel, faArrowRight, faArrowLeft);
+
+$(document).ready(() => render((
+    <I18nextProvider i18n={i18n}>
+        <Router>
+            <Route path="/" component={Frame}/>
+        </Router>
+    </I18nextProvider>
+), document.getElementById('root')))

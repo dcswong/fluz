@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="27px" viewBox="0 0 37 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>mastercard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style-Guide" transform="translate(-580.000000, -573.000000)" fill-rule="nonzero">
+            <g id="Icons" transform="translate(579.000000, 41.000000)">
+                <g id="Other-Icons" transform="translate(1.000000, 464.000000)">
+                    <g id="Icons" transform="translate(0.000000, 25.000000)">
+                        <g id="mastercard" transform="translate(0.000000, 43.000000)">
+                            <rect id="Rectangle-path" fill="#243747" x="0" y="0" width="36.5294118" height="27" rx="3"></rect>
+                            <circle id="Oval" fill="#E61C24" cx="14.2941176" cy="13.5" r="6.35294118"></circle>
+                            <circle id="Oval" fill="#F99F1B" cx="22.1828824" cy="13.5" r="6.35294118"></circle>
+                            <path d="M18.2385,8.52564706 C16.7172754,9.72825541 15.8299592,11.5608272 15.8299592,13.5 C15.8299592,15.4391728 16.7172754,17.2717446 18.2385,18.4743529 C19.7597246,17.2717446 20.6470408,15.4391728 20.6470408,13.5 C20.6470408,11.5608272 19.7597246,9.72825541 18.2385,8.52564706 Z" id="Shape" fill="#F26622"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,60 @@
+{
+    "contact": {
+        "label": "Customer Information",
+        "fields": {
+            "email": "Email Address",
+            "firstName": "First Name",
+            "lastName": "Lsat Name",
+            "tel": "Phone Number"
+        }
+    },
+    "payment": {
+        "label": "Choose a payment method",
+        "methods": {
+            "card": {
+                "no": "Card Number",
+                "expDate": "Expiry Date",
+                "cvc": "Security Code"
+            },
+            "addNew": "Add New",
+            "guide": "All provided checkout information will be securely encrypted."
+        }
+    },
+    "shipping": {
+        "label": "Shipping Address",
+        "charge": "SHIPPING",
+        "areas": {
+            "HK": "Hong Kong Island",
+            "KLN": "Kowloon",
+            "NT": "New Territories"
+        },
+        "filter": {
+            "area": "Area",
+            "district": "District"
+        },
+        "methods": {
+            "eflocker": {
+                "label": "Select Your EF Locker:",
+                "filter": "Locker",
+                "guide": {
+                    "label": "Instruction",
+                    "steps": [
+                        "After payment, the commodity will be delivered to the EF locker within 4 working days",
+                        "Customer will receive SMS verification code after commodity arrived EF locker",
+                        "User touch the locker screen and get started. Press the ‘Pick Up’ button",
+                        "Follow the instruction and enter the 6-digit verification code from the SMS",
+                        "The Grid door will be opened automatically",
+                        "Take out the parcel",
+                        "Please close the grid door in order to finish the entire process. No additional fee will be charged"
+                    ],
+                    "notice": "Customer need to pick up the commodity within 48-hour (include Public Holiday). Customer may have to pay extra fee for additional delivery."
+                }
+            },
+            "sfstation": {
+                "label": "Select Your SF Station",
+                "filter": "Station"
+            }
+        }
+    },
+    "orderNow" : "ORDER NOW"
+}

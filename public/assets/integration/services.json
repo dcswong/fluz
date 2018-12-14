@@ -1,0 +1,77 @@
+{
+    "id" : "integration",
+    "name" : "Integration",
+    "children" : [
+        {
+            "id" : "google-developers",
+            "name" : "Google Developer",
+            "image" : "/assets/imgs/integration/googleDevelopers.png",
+            "description" : "Then, we'll use sidebar's width to push the element out of the screen when we don't need it. This behaviour will be applied when the sidebar has an .active class. This class has a negative margin left value that equals to the sidebar width. This will be all for the moment and we will work more with this class We'll use this class later on in the JavaScript part.",
+            "type" : "Server"
+        },
+        {
+            "id" : "kinvey",
+            "name" : "Kinvey",
+            "image" : "/assets/imgs/integration/kinvey.png",
+            "description" : "Then, we'll use sidebar's width to push the element out of the screen when we don't need it. This behaviour will be applied when the sidebar has an .active class. This class has a negative margin left value that equals to the sidebar width. This will be all for the moment and we will work more with this class We'll use this class later on in the JavaScript part.",
+            "type" : "Server"
+        },
+        {
+            "id" : "auth0",
+            "name" : "Auth0",
+            "image" : "/assets/imgs/integration/auth0.png",
+            "description" : "Then, we'll use sidebar's width to push the element out of the screen when we don't need it. This behaviour will be applied when the sidebar has an .active class. This class has a negative margin left value that equals to the sidebar width. This will be all for the moment and we will work more with this class We'll use this class later on in the JavaScript part.",
+            "type" : "Server"
+        },
+        {
+            "id" : "twilio",
+            "name" : "Twilio",
+            "image" : "/assets/imgs/integration/twilio.png",
+            "description" : "Then, we'll use sidebar's width to push the element out of the screen when we don't need it. This behaviour will be applied when the sidebar has an .active class. This class has a negative margin left value that equals to the sidebar width. This will be all for the moment and we will work more with this class We'll use this class later on in the JavaScript part.",
+            "type" : "Server"
+        },
+        {
+            "id" : "stripe",
+            "name" : "Stripe",
+            "image" : "/assets/imgs/integration/stripe.png",
+            "description" : "Then, we'll use sidebar's width to push the element out of the screen when we don't need it. This behaviour will be applied when the sidebar has an .active class. This class has a negative margin left value that equals to the sidebar width. This will be all for the moment and we will work more with this class We'll use this class later on in the JavaScript part.",
+            "type" : "Server"
+        },
+
+        {
+            "id" : "google-developers2",
+            "name" : "Google Developer2",
+            "image" : "/assets/imgs/integration/googleDevelopers.png",
+            "description" : "Then, we'll use sidebar's width to push the element out of the screen when we don't need it. This behaviour will be applied when the sidebar has an .active class. This class has a negative margin left value that equals to the sidebar width. This will be all for the moment and we will work more with this class We'll use this class later on in the JavaScript part.",
+            "type" : "Map"
+        },
+        {
+            "id" : "kinvey2",
+            "name" : "Kinvey2",
+            "image" : "/assets/imgs/integration/kinvey.png",
+            "description" : "Then, we'll use sidebar's width to push the element out of the screen when we don't need it. This behaviour will be applied when the sidebar has an .active class. This class has a negative margin left value that equals to the sidebar width. This will be all for the moment and we will work more with this class We'll use this class later on in the JavaScript part.",
+            "type" : "Map"
+        },
+        {
+            "id" : "auth02",
+            "name" : "Auth02",
+            "image" : "/assets/imgs/integration/auth0.png",
+            "description" : "Then, we'll use sidebar's width to push the element out of the screen when we don't need it. This behaviour will be applied when the sidebar has an .active class. This class has a negative margin left value that equals to the sidebar width. This will be all for the moment and we will work more with this class We'll use this class later on in the JavaScript part.",
+            "type" : "Map"
+        },
+        {
+            "id" : "auth03",
+            "name" : "Auth03",
+            "image" : "/assets/imgs/integration/auth0.png",
+            "description" : "Then, we'll use sidebar's width to push the element out of the screen when we don't need it. This behaviour will be applied when the sidebar has an .active class. This class has a negative margin left value that equals to the sidebar width. This will be all for the moment and we will work more with this class We'll use this class later on in the JavaScript part.",
+            "type" : "Login"
+        },
+        {
+            "id" : "twilio2",
+            "name" : "Twilio2",
+            "image" : "/assets/imgs/integration/twilio.png",
+            "description" : "Then, we'll use sidebar's width to push the element out of the screen when we don't need it. This behaviour will be applied when the sidebar has an .active class. This class has a negative margin left value that equals to the sidebar width. This will be all for the moment and we will work more with this class We'll use this class later on in the JavaScript part.",
+            "type" : "Login"
+        }
+    ]
+}

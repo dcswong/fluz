@@ -1,0 +1,1333 @@
+[
+    {
+        "region_translations": {
+            "en": "Hong Kong Island",
+            "zh-hant": "香港島"
+        },
+        "district_translations": {
+            "en": "Aberdeen",
+            "zh-hant": "香港仔"
+        },
+        "name_translations": {
+            "en": "Workshop No. 6, 9/F, Fullagar Industrial Building, 234 Aberdeen Main Road, Hong Kong",
+            "zh-hant": "香港香港仔大道234號富嘉工業大廈9樓6室"
+        },
+        "code": "852TAL"
+    }, {
+        "region_translations": {
+            "en": "Hong Kong Island",
+            "zh-hant": "香港島"
+        },
+        "district_translations": {
+            "en": "Aberdeen",
+            "zh-hant": "香港仔"
+        },
+        "name_translations": {
+            "en": "Shop 119, Wah On House, Wah Fu (I) Estate, 18 Wah Fu Road, Pokfulam, Hong Kong",
+            "zh-hant": "香港薄扶林華富道18號華富(一)邨華安樓119號舖"
+        },
+        "code": "852TBL"
+    }, {
+        "region_translations": {
+            "en": "Hong Kong Island",
+            "zh-hant": "香港島"
+        },
+        "district_translations": {
+            "en": "Ap Lei Chau",
+            "zh-hant": "鴨脷洲"
+        },
+        "name_translations": {
+            "en": "Shop 1, G/F, 42 \u0026 44 Main Street, Ap Lei Chau, Hong Kong",
+            "zh-hant": "香港鴨脷洲鴨脷洲大街42-44號地下1號舖"
+        },
+        "code": "852TCL"
+    }, {
+        "region_translations": {
+            "en": "Hong Kong Island",
+            "zh-hant": "香港島"
+        },
+        "district_translations": {
+            "en": "Chai Wan",
+            "zh-hant": "柴灣"
+        },
+        "name_translations": {
+            "en": "Workshop 1, 5/F, Trend Centre, 29 Cheung Lee Street, Chai Wan, Hong Kong",
+            "zh-hant": "香港柴灣祥利街29號國貿中心5樓1室"
+        },
+        "code": "852PCL"
+    }, {
+        "region_translations": {
+            "en": "Hong Kong Island",
+            "zh-hant": "香港島"
+        },
+        "district_translations": {
+            "en": "Chai Wan",
+            "zh-hant": "柴灣"
+        },
+        "name_translations": {
+            "en": "Shop 212, 2/F, Paradise Mall, 100 Shing Tai Road, Chai Wan, Hong Kong",
+            "zh-hant": "香港柴灣盛泰道100號杏花新城212號舖"
+        },
+        "code": "852PFL"
+    }, {
+        "region_translations": {
+            "en": "Hong Kong Island",
+            "zh-hant": "香港島"
+        },
+        "district_translations": {
+            "en": "North Point",
+            "zh-hant": "北角"
+        },
+        "name_translations": {
+            "en": "Shop 8, G/F, Fung Full Plaza, 480 King's Road, North Point, Hong Kong",
+            "zh-hant": "香港北角英皇道480號豐富商場地下8號鋪"
+        },
+        "code": "852PBL"
+    }, {
+        "region_translations": {
+            "en": "Hong Kong Island",
+            "zh-hant": "香港島"
+        },
+        "district_translations": {
+            "en": "North Point",
+            "zh-hant": "北角"
+        },
+        "name_translations": {
+            "en": "Shop 202\u0026203, 2/F, Olympia Plaza, 255 King's Road, North Point, Hong Kong",
+            "zh-hant": "香港北角英皇道255號國都商場2樓202及203號舖"
+        },
+        "code": "852PDL"
+    }, {
+        "region_translations": {
+            "en": "Hong Kong Island",
+            "zh-hant": "香港島"
+        },
+        "district_translations": {
+            "en": "Quarry Bay",
+            "zh-hant": "鰂魚涌"
+        },
+        "name_translations": {
+            "en": "ShopQ, G/F, Oceanic Building, 22-46 Finnie Street, Quarry Bay, Hong Kong",
+            "zh-hant": "香港鰂魚涌芬尼街22-46號海暉大廈地下Q鋪"
+        },
+        "code": "852PEL"
+    }, {
+        "region_translations": {
+            "en": "Hong Kong Island",
+            "zh-hant": "香港島"
+        },
+        "district_translations": {
+            "en": "Sai Wan",
+            "zh-hant": "西環"
+        },
+        "name_translations": {
+            "en": "Shop C, G/F, Shun Cheong Building, 28 Hau Wo Street, Kennedy Town, Sai Wan, Hong Kong",
+            "zh-hant": "香港西環厚和街28號順昌大廈地下C舖"
+        },
+        "code": "852MAL"
+    }, {
+        "region_translations": {
+            "en": "Hong Kong Island",
+            "zh-hant": "香港島"
+        },
+        "district_translations": {
+            "en": "Sai Wan",
+            "zh-hant": "西環"
+        },
+        "name_translations": {
+            "en": "Shop 9, G/F , Belcher Court, 2 Sai Cheung Street, Sai Wan, Hong Kong",
+            "zh-hant": "香港西環西祥街2號寶翠閣地下9號舖"
+        },
+        "code": "852MCL"
+    }, {
+        "region_translations": {
+            "en": "Hong Kong Island",
+            "zh-hant": "香港島"
+        },
+        "district_translations": {
+            "en": "Sai Wan Ho",
+            "zh-hant": "西灣河"
+        },
+        "name_translations": {
+            "en": "Portion A of Shop E, G/F, 28-36 Hing Man Street, Sai Wan Ho, Hong Kong",
+            "zh-hant": "香港西灣河興民街28-36號地下E舖A部份"
+        },
+        "code": "852PGL"
+    }, {
+        "region_translations": {
+            "en": "Hong Kong Island",
+            "zh-hant": "香港島"
+        },
+        "district_translations": {
+            "en": "Shau Kei Wan",
+            "zh-hant": "筲箕灣"
+        },
+        "name_translations": {
+            "en": "Shop 1142 \u0026 1143, 1/F, Smiling Shaukeiwan Plaza, 17 Nam Hong Street,Shau Kei Wan, Hong Kong",
+            "zh-hant": "香港筲箕灣南康街17號天悅筲箕灣廣場1樓1142及1143號舖"
+        },
+        "code": "852PAL"
+    }, {
+        "region_translations": {
+            "en": "Hong Kong Island",
+            "zh-hant": "香港島"
+        },
+        "district_translations": {
+            "en": "Siu Sai Wan",
+            "zh-hant": "小西灣"
+        },
+        "name_translations": {
+            "en": "Shop 69, Harmony Garden, 9 Siu Sai Wan Road, Siu Sai Wan, Hong Kong",
+            "zh-hant": "香港小西灣小西灣道9號富欣花園69號舖"
+        },
+        "code": "852PHL"
+    }, {
+        "region_translations": {
+            "en": "Hong Kong Island",
+            "zh-hant": "香港島"
+        },
+        "district_translations": {
+            "en": "Tin Hau",
+            "zh-hant": "天后"
+        },
+        "name_translations": {
+            "en": "Shop G05 \u0026 G15, G/F, Tin Hau Apple Mall, Kiu Hing Mansion, 14 King's Road , Tin Hau, Hong Kong",
+            "zh-hant": "香港天后英皇道14號僑興大廈天后蘋果商場地下G05及G15號舖"
+        },
+        "code": "852PJL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Cheung Sha Wan",
+            "zh-hant": "長沙灣"
+        },
+        "name_translations": {
+            "en": "Shop 6, G/F, Fortune Shopping Centre, Fortune Estate, 8 Hang Cheung Street, Cheung Sha Wan, Kowloon",
+            "zh-hant": "九龍長沙灣幸祥街8號幸福邨幸福商場地下6號舖"
+        },
+        "code": "852DDL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Ho Man Tin",
+            "zh-hant": "何文田"
+        },
+        "name_translations": {
+            "en": "Shop No.5, Ground Floor, Hong Man House (Block C) (forming part of Integrated Commercial/ Car Park Accommodation), Upper Oi Man Estate, No.60 Chung Hau Street, Kowloon",
+            "zh-hant": "九龍忠孝街60號愛民邨康民樓(C座)地下5號舖"
+        },
+        "code": "852KBL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Hung Hom",
+            "zh-hant": "紅磡"
+        },
+        "name_translations": {
+            "en": "Shop 1A \u0026 2, G/F, 12 Bulkeley Street, Hung Hom, Kowloon(Entry at Whampoa Street)",
+            "zh-hant": "九龍紅磡寶其利街12號地下1A及2號舖(入口於黃埔街)"
+        },
+        "code": "852KAL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Hung Hom",
+            "zh-hant": "紅磡"
+        },
+        "name_translations": {
+            "en": "Shop 82, B1/F,3 Tak Hong Street, Whampoa Garden Site 12, Hung Hom, Kowloon",
+            "zh-hant": "九龍紅磡黃埔花園12期德康街3號家居庭地庫82舖"
+        },
+        "code": "852KEL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Kowloon Bay",
+            "zh-hant": "九龍灣"
+        },
+        "name_translations": {
+            "en": "Shop 209, 1/F, Tak Bo Mall, 3 Ngau Tau Kok Road, Kowloon Bay, Kowloon",
+            "zh-hant": "九龍九龍灣牛頭角道3號得寶商場1樓209號舖"
+        },
+        "code": "852HBL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Kowloon Bay",
+            "zh-hant": "九龍灣"
+        },
+        "name_translations": {
+            "en": "Unit 129, 1/F, Richland Gardens, 80 Wang Kwong Road, Kowloon Bay, Kowloon",
+            "zh-hant": "九龍九龍灣宏光道80號麗晶花園1樓129號舖"
+        },
+        "code": "852HFL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Ngau Tau Kok",
+            "zh-hant": "牛頭角"
+        },
+        "name_translations": {
+            "en": "Shop 131A, 1/F, On Kay Commercial Center, 20 Chun Wah Road, Ngau Tau Kok, Kowloon",
+            "zh-hant": "九龍牛頭角安基苑安基商場1樓131A號舖"
+        },
+        "code": "852HGL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Kowloon City",
+            "zh-hant": "九龍城"
+        },
+        "name_translations": {
+            "en": "Shop 13, G/F, Tai Wah Building, 3-13 Nga Tsin Long Road, Kowloon City, Kowloon",
+            "zh-hant": "九龍九龍城衙前塱道3-13號大華大廈地下13號舖"
+        },
+        "code": "852KCL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Kwun Tong",
+            "zh-hant": "觀塘"
+        },
+        "name_translations": {
+            "en": "Shop 23, G/F., Yue Man Centre, 300 \u0026 302 Ngau Tau Kok Road, Kwun Tong, Kowloon",
+            "zh-hant": "九龍觀塘牛頭角道300及302號裕民中心地下23號舖"
+        },
+        "code": "852AFL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Kwun Tong",
+            "zh-hant": "觀塘"
+        },
+        "name_translations": {
+            "en": "Shop 21, Level LG/1, On Tat shopping Center, On Tat Estate, Kwun Tong, Kowloon",
+            "zh-hant": "九龍觀塘安達邨安達商場地下低層LG21號舖"
+        },
+        "code": "852CNL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Lai Chi Kok",
+            "zh-hant": "荔枝角"
+        },
+        "name_translations": {
+            "en": "Workshop No. 4, 3/F, Premier Centre, 20 Cheung Shun Street, Lai Chi Kok, Kowloon",
+            "zh-hant": "九龍荔枝角長順街20號時豐中心3樓4室"
+        },
+        "code": "852DBL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Lai Chi Kok",
+            "zh-hant": "荔枝角"
+        },
+        "name_translations": {
+            "en": "Shop 2A, G/F, Banyan Mall, Banyan Garden, 863 Lai Chi Kok Road, Lai Chi Kok, Kowloon",
+            "zh-hant": "九龍荔枝角荔枝角道863號泓景臺泓景匯地下2A號舖"
+        },
+        "code": "852DCL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Lam Tin",
+            "zh-hant": "藍田"
+        },
+        "name_translations": {
+            "en": "Shop 4A20-22, Level 3, Sceneway Plaza, 8 Sceneway Road, Lam Tin, Kowloon",
+            "zh-hant": "九龍藍田匯景道8號匯景廣場3樓4A20-22號舖"
+        },
+        "code": "852ACL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Lam Tin",
+            "zh-hant": "藍田"
+        },
+        "name_translations": {
+            "en": "Shop 105, 1/F, Kwong Tin Shopping Centre, Kwong Tin Estate, Pik Wan Road, Lam Tin, Kowloon",
+            "zh-hant": "九龍藍田碧雲道廣田邨廣田商場1樓105號舖"
+        },
+        "code": "852CKL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Mong Kok",
+            "zh-hant": "旺角"
+        },
+        "name_translations": {
+            "en": "Shop 38, G/F, Charming Garden Phase 2, Hoi Wang Road, Mong Kok, Kowloon",
+            "zh-hant": "九龍旺角海泓道富榮花園2期地下38號舖"
+        },
+        "code": "852BAL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Mong Kok",
+            "zh-hant": "旺角"
+        },
+        "name_translations": {
+            "en": "Shop D on G/F, Hung Tak Building, Nos 163 \u0026 163A Sai Yee Street, Kowloon",
+            "zh-hant": "九龍洗衣街163\u0026163A號鴻德大廈地下D號舖"
+        },
+        "code": "852BDL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Mong Kok",
+            "zh-hant": "旺角"
+        },
+        "name_translations": {
+            "en": "Room 1626, 16/F., Park-In Commercial Centre, 56 Dundas Street, Mong Kok, Kowloon",
+            "zh-hant": "九龍旺角登打士街56號柏裕商業中心16樓1626室"
+        },
+        "code": "852BEL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Ngau Tau Kok",
+            "zh-hant": "牛頭角"
+        },
+        "name_translations": {
+            "en": "Shop 1, G/F, Lotus Tower 2, Kwun Tong Garden Estate, Kwun Tong, Kowloon",
+            "zh-hant": "九龍牛頭角觀塘花園玉蓮臺2座地下1號舖"
+        },
+        "code": "852CML"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Sham Shui Po",
+            "zh-hant": "深水埗"
+        },
+        "name_translations": {
+            "en": "Shop 122, 1/F, Fu Cheong Shopping Centre, Fu Cheong Estate, Sai Chuen Road, Sham Shui Po, Kowloon",
+            "zh-hant": "九龍深水埗西邨路富昌邨富昌商場1樓122號舖"
+        },
+        "code": "852BGL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Sham Shui Po",
+            "zh-hant": "深水埗"
+        },
+        "name_translations": {
+            "en": "Shop B3, G/F, Smiling Plaza, 155-181 Castle Peak Road, Sham Shui Po, Kowloon",
+            "zh-hant": "九龍深水埗青山道155-181號天悅廣場地下B3舖"
+        },
+        "code": "852DAL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Shek Kip Mei",
+            "zh-hant": "石硤尾"
+        },
+        "name_translations": {
+            "en": "Shop 222, G/F, Kam Yuck Building, 2 Wai Chi Lane, Shek Kip Mei, Kowloon",
+            "zh-hant": "九龍石硤尾偉智里2號金玉大廈地下222號舖"
+        },
+        "code": "852BCL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Tai Kok Tsui",
+            "zh-hant": "大角咀"
+        },
+        "name_translations": {
+            "en": "Shop 6, G/F, Chung Ying Building, 3 Wai On Street, Tai Kok Tsui, Kowloon",
+            "zh-hant": "九龍大角咀惠安街3號中英樓地下6號舖"
+        },
+        "code": "852BFL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "To Kwa Wan",
+            "zh-hant": "土瓜灣"
+        },
+        "name_translations": {
+            "en": "Shop B, G/F, Kingsgate, 178 Pau Chung Street, To Kwa Wan, Kowloon",
+            "zh-hant": "九龍土瓜灣炮仗街178號興基豪園地下B舖"
+        },
+        "code": "852KDL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "To Kwa Wan",
+            "zh-hant": "土瓜灣"
+        },
+        "name_translations": {
+            "en": "Shop 126, G/F, Block G, Lok Man Sun Chuen, To Kwa Wan, Kowloon",
+            "zh-hant": "九龍土瓜灣樂民新邨G座平台地下126號舖"
+        },
+        "code": "852KFL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Tsz Wan Shan",
+            "zh-hant": "慈雲山"
+        },
+        "name_translations": {
+            "en": "Shop 652B, 6/F., Tsz Wan Shan Shopping Centre, Tsz Lok Estate, 23 Yuk Wah Street, Tsz Wan Shan, Kowloon",
+            "zh-hant": "九龍慈雲山毓華街23號慈樂邨慈雲山中心6樓652B號舖"
+        },
+        "code": "852HDL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Wong Tai Sin",
+            "zh-hant": "黃大仙"
+        },
+        "name_translations": {
+            "en": "Shop 29A, G/F, Tropicana Gardens, 110 Lung Cheung Road, Wong Tai Sin, Kowloon",
+            "zh-hant": "九龍黃大仙龍翔道110號豪苑地下29A舖"
+        },
+        "code": "852HAL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Wong Tai Sin",
+            "zh-hant": "黃大仙"
+        },
+        "name_translations": {
+            "en": "Shop S215A, 2/F., Chuk Yuen Plaza, Chuk Yuen South Estate, 15 Chuk Yuen Road, Wong Tai Sin, Kowloon",
+            "zh-hant": "九龍黃大仙竹園路15號竹園南邨竹園廣場2樓S215A舖"
+        },
+        "code": "852HCL"
+    }, {
+        "region_translations": {
+            "en": "Kowloon",
+            "zh-hant": "九龍"
+        },
+        "district_translations": {
+            "en": "Yau Tong",
+            "zh-hant": "油塘"
+        },
+        "name_translations": {
+            "en": "Shop 229, 2/F, Domain, Yau Tong, Kowloon",
+            "zh-hant": "九龍油塘大本型2樓229號舖"
+        },
+        "code": "852AJL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Fanling",
+            "zh-hant": "粉嶺"
+        },
+        "name_translations": {
+            "en": "Shop 111 \u0026 112, G/F, Cheung Chung House, Cheung Wah Estate, 38 San Wan Road, Fanling, NT",
+            "zh-hant": "新界粉嶺新運路38號祥華邨祥頌樓G111-112舖"
+        },
+        "code": "852FHL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Fanling",
+            "zh-hant": "粉嶺"
+        },
+        "name_translations": {
+            "en": "Shop 1, G/F, Avon Park, 15 Yat Ming Road, Fanling, NT",
+            "zh-hant": "新界粉嶺一鳴路15號碧湖花園碧湖商場地下1號舖"
+        },
+        "code": "852FJL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Fanling",
+            "zh-hant": "粉嶺"
+        },
+        "name_translations": {
+            "en": "Shop A, G/F, 17 Wo Tai Street, Luen Wo Market, Fanling, NT",
+            "zh-hant": "新界粉嶺聯和墟和泰街17號地下A舖"
+        },
+        "code": "852NFL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Fanling",
+            "zh-hant": "粉嶺"
+        },
+        "name_translations": {
+            "en": "Shop G28, G/F, Wah Ming Shopping Centre, 21 Wah Ming Road, Fanling, NT",
+            "zh-hant": "新界粉嶺華明路21號華明商場地下G28號舖"
+        },
+        "code": "852NPL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Kwai Chung",
+            "zh-hant": "葵涌"
+        },
+        "name_translations": {
+            "en": "Shop G16, G/F, Hang King Garden, 9 Wing Fong Road, Kwai Chung, NT",
+            "zh-hant": "新界葵涌榮芳路9號恒景花園恒景商場地下G16舖"
+        },
+        "code": "852LAL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Kwai Chung",
+            "zh-hant": "葵涌"
+        },
+        "name_translations": {
+            "en": "Shop 7, G/F, Kwai Do Building, 129-151 Tai Loong Street, Kwai Chung, NT",
+            "zh-hant": "新界葵涌大隴街129-151號葵都大廈地下7號舖"
+        },
+        "code": "852LBL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Kwai Chung",
+            "zh-hant": "葵涌"
+        },
+        "name_translations": {
+            "en": "Shop 53A, G/F, Kwai Chung Plaza, Kwai Chung, NT",
+            "zh-hant": "新界葵涌葵富路7-11號葵涌廣場地下53A號舖"
+        },
+        "code": "852LCL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Lai King",
+            "zh-hant": "荔景"
+        },
+        "name_translations": {
+            "en": "Shop 4, G/F, Ming King House, Lai King Estate, Lai King, KLN",
+            "zh-hant": "九龍荔景荔景邨明景樓地下4號舖"
+        },
+        "code": "852DEL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Ma On Shan",
+            "zh-hant": "馬鞍山"
+        },
+        "name_translations": {
+            "en": "Shop 21, G/F, Block A \u0026 B, Sunshine City Phase 1, Ma On Shan, NT",
+            "zh-hant": "新界馬鞍山新港城第一期A及B座地下21號舖"
+        },
+        "code": "852FDL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Ma On Shan",
+            "zh-hant": "馬鞍山"
+        },
+        "name_translations": {
+            "en": "Shop 113, Level LG/1, Lee On Shopping Centre, Lee On Estate, 23 Sha On Street, Ma On Shan, NT",
+            "zh-hant": "新界馬鞍山沙安街23號利安邨利安商場LG/1樓113號舖"
+        },
+        "code": "852NEL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Ma On Shan",
+            "zh-hant": "馬鞍山"
+        },
+        "name_translations": {
+            "en": "Shop15, Level 1, The Waterside Mall, 15 On Chun Street, Ma On Shan,NT",
+            "zh-hant": "新界馬鞍山海濱鞍駿街15號雅濤居購物商場1樓15號舖"
+        },
+        "code": "852NGL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Ma On Shan",
+            "zh-hant": "馬鞍山"
+        },
+        "name_translations": {
+            "en": "Shop A15, G/F, Ma On Shan Centre, No. 1 On Chun Street, Ma On Shan, NT",
+            "zh-hant": "新界馬鞍山鞍駿街1號馬鞍山中心地下A15舖"
+        },
+        "code": "852NML"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Sai Kung",
+            "zh-hant": "西貢"
+        },
+        "name_translations": {
+            "en": "Shop 10, G/F, 66 Yi Chun Street, Sai Kung, NT",
+            "zh-hant": "新界西貢宜春街66號地下10號舖"
+        },
+        "code": "852AHL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Sha Tin",
+            "zh-hant": "沙田"
+        },
+        "name_translations": {
+            "en": "Shop SHM 9, MTR Shek Mun Station, Sha Tin, NT (Paid Concourse)",
+            "zh-hant": "新界沙田港鐵石門站SHM 9號舖 (入閘區大堂)"
+        },
+        "code": "852FML"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Sha Tin",
+            "zh-hant": "沙田"
+        },
+        "name_translations": {
+            "en": "Shop G41, G/F, Fortune City One Plus, Pak Tak Street, Sha Tin, NT",
+            "zh-hant": "新界沙田百得街置富第一城樂薈地下G41號舖"
+        },
+        "code": "852FSL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Sha Tin",
+            "zh-hant": "沙田"
+        },
+        "name_translations": {
+            "en": "Stall 18, G/F, Jat Min Chuen Market, Shatin, NT",
+            "zh-hant": "新界沙田乙明邨街市地下攤檔18號"
+        },
+        "code": "852NAL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Sha Tin",
+            "zh-hant": "沙田"
+        },
+        "name_translations": {
+            "en": "Shop ST5, G/F, Wah Fung House, Lek Yuen Estate, 6 Lek Yuen Street, Shatin, NT",
+            "zh-hant": "新界沙田瀝源街6號瀝源邨華豐樓地下ST5號舖"
+        },
+        "code": "852NJL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Sheung Shui",
+            "zh-hant": "上水"
+        },
+        "name_translations": {
+            "en": "Shop 65, Level 1, Lung Fung Garden, 33 Lung Sum Avenue, Sheung Shui, NT",
+            "zh-hant": "新界上水龍琛路33號龍豐花園龍豐廣場65舖"
+        },
+        "code": "852FIL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Sheung Shui",
+            "zh-hant": "上水"
+        },
+        "name_translations": {
+            "en": "Shop 117, G/F, Choi Chu House, Choi Yuen Estate, Sheung Shui, NT",
+            "zh-hant": "新界上水彩園路彩園邨彩珠樓地下117號舖"
+        },
+        "code": "852FTL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Sheung Shui",
+            "zh-hant": "上水"
+        },
+        "name_translations": {
+            "en": "Shop 10A, G/F, 148A Jockey Club Road, Sheung Shui, NT",
+            "zh-hant": "新界上水馬會道148A號地下10A舖"
+        },
+        "code": "852NDL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tai Po",
+            "zh-hant": "大埔"
+        },
+        "name_translations": {
+            "en": "Shop A5, G/F, Fortune Plaza, 4 On Chee Road, Tai Po, NT",
+            "zh-hant": "新界大埔安慈路4號昌運中心地下A5舖"
+        },
+        "code": "852FCL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tai Po",
+            "zh-hant": "大埔"
+        },
+        "name_translations": {
+            "en": "Shop S13, G/F, Kwong Yan House, Kwong Fuk Estate, Tai Po, NT",
+            "zh-hant": "新界大埔廣福邨廣仁樓地下S13號舖"
+        },
+        "code": "852NCL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tai Po",
+            "zh-hant": "大埔"
+        },
+        "name_translations": {
+            "en": "Shop 30, G/F, Tai Wo Centre, 15 Tai Po Tai Wo Road, Tai Po, NT",
+            "zh-hant": "新界大埔太和路15號太和中心地下30號鋪"
+        },
+        "code": "852NHL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tai Po",
+            "zh-hant": "大埔"
+        },
+        "name_translations": {
+            "en": "Shop No. F122B on 1/F., Fu Shin Shopping Centre, Tai Po, NT",
+            "zh-hant": "新界大埔富善商場1樓 F122B舖"
+        },
+        "code": "852NLL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tai Wai",
+            "zh-hant": "大圍"
+        },
+        "name_translations": {
+            "en": "Shop E, G/F,4 Chik Fuk Street, Tai Wai, NT",
+            "zh-hant": "新界大圍積福街4號地下E舖"
+        },
+        "code": "852FEL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tai Wai",
+            "zh-hant": "大圍"
+        },
+        "name_translations": {
+            "en": "Shop 3A, Commercial Complex, Carado Garden, Fu Tin Lane, Tai Wai, NT",
+            "zh-hant": "新界大圍富田里雲疊花園商場地下3A號舖"
+        },
+        "code": "852FVL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tai Wai",
+            "zh-hant": "大圍"
+        },
+        "name_translations": {
+            "en": "Shop 203, 1/F, Hin Keng Shopping Centre, Hin Keng Estate, Tai Wai, NT",
+            "zh-hant": "新界大圍顯徑邨顯徑商場1樓203號舖"
+        },
+        "code": "852NBL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tin Shui Wai",
+            "zh-hant": "天水圍"
+        },
+        "name_translations": {
+            "en": "Shop A98-99, G/F, Kingswood Richly Plaza, 1 Tin Wu Road, Tin Shui Wai, NT",
+            "zh-hant": "新界天水圍天湖路1號嘉湖新北江商場地下A98-99號舖"
+        },
+        "code": "852FBL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tin Shui Wai",
+            "zh-hant": "天水圍"
+        },
+        "name_translations": {
+            "en": "Shop 186, 1/F., Phase1, Fortune Kingswood, 12-18 Tin Yan Road, Tin Shui Wai, NT",
+            "zh-hant": "新界天水圍天恩路12-18號置富嘉湖1期186號舖"
+        },
+        "code": "852FKL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tin Shui Wai",
+            "zh-hant": "天水圍"
+        },
+        "name_translations": {
+            "en": "Shop 303, 3/F, Tin Chak Shopping Centre, 71-77 Tin Shui Road, Tin Shui Wai, NT",
+            "zh-hant": "新界天水圍天瑞路71-77號天澤商場3樓303舖"
+        },
+        "code": "852UCL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tin Shui Wai",
+            "zh-hant": "天水圍"
+        },
+        "name_translations": {
+            "en": "Shop 3007, 3/F, No. 8 Tin Sau Rd, Tin Shui Wai, NT",
+            "zh-hant": "新界天水圍天秀路8號天一商城3樓3007號鋪"
+        },
+        "code": "852UJL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tseung Kwan O",
+            "zh-hant": "將軍澳"
+        },
+        "name_translations": {
+            "en": "Shop No. 6, G/F, Block 1, Verbena Heights, 8 Mau Tai Road, Tseung Kwan O, NT",
+            "zh-hant": "新界將軍澳貿泰路8號茵怡花園第1座地下6號舖"
+        },
+        "code": "852AAL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tseung Kwan O",
+            "zh-hant": "將軍澳"
+        },
+        "name_translations": {
+            "en": "Shop S8B, G/F, Bauhinia Garden Commercial Complex, 11 Tong Chun Street, Tseung Kwan O, NT",
+            "zh-hant": "新界將軍澳唐俊街11號寶盈花園商場地下S8B號舖"
+        },
+        "code": "852ABL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tseung Kwan O",
+            "zh-hant": "將軍澳"
+        },
+        "name_translations": {
+            "en": "Shop 1, G/F, Block 1, On Ning Garden, 10 Sheung Ning Road, Hang Hau, Tseung Kwan O, NT",
+            "zh-hant": "新界將軍澳坑口常寧路10號安寧花園1座地下1號舖"
+        },
+        "code": "852AIL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tseung Kwan O",
+            "zh-hant": "將軍澳"
+        },
+        "name_translations": {
+            "en": "Shop 215, 2/F, Sheung Tak Plaza, Sheung Tak Estate, 2 Tong Ming Street, Tseung Kwan O, NT",
+            "zh-hant": "新界將軍澳唐明街2號尚德邨尚德廣場2樓215號舖"
+        },
+        "code": "852CLL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tseung Kwan O",
+            "zh-hant": "將軍澳"
+        },
+        "name_translations": {
+            "en": "Shop 17, Level UG, Maritime Bay Commercial Center, 18 Pui Shing Road, Hang Hau, Tseung Kwan O, NT",
+            "zh-hant": "新界將軍澳坑口海悅豪園UG17號舖"
+        },
+        "code": "852CPL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tsing Yi",
+            "zh-hant": "青衣"
+        },
+        "name_translations": {
+            "en": "Workshop No. 13, 13/F, Block A, Vigor Industrial Building, 14-20 Cheung Tat Road, Tsing Yi, NT",
+            "zh-hant": "新界青衣長達路14-20號偉力工業大廈A座13樓13室"
+        },
+        "code": "852GCL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tsing Yi",
+            "zh-hant": "青衣"
+        },
+        "name_translations": {
+            "en": "Shop 303, 3/F, Cheung Hong Commercial Centre Phase 2, 12 Ching Hong Road, Tsing Yi, NT",
+            "zh-hant": "新界青衣青康路12號長康二期商場3樓303號舖"
+        },
+        "code": "852GKL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tsuen Wan",
+            "zh-hant": "荃灣"
+        },
+        "name_translations": {
+            "en": "Unit 1243, 12/F, Nan Fung Centre, 264-298 Castle Peak Road, Tsuen Wan, NT",
+            "zh-hant": "新界荃灣青山公路264-298號南豐中心12樓1243號室"
+        },
+        "code": "852GDL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tsuen Wan",
+            "zh-hant": "荃灣"
+        },
+        "name_translations": {
+            "en": "Shop 2, 2/F, Tsuen Fung Centre, Tsuen Wan, NT",
+            "zh-hant": "新界荃灣荃豐中心2樓2號舖"
+        },
+        "code": "852GEL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tuen Mun",
+            "zh-hant": "屯門"
+        },
+        "name_translations": {
+            "en": "Shop 29, G/F, Waldorf Garden, 1 Tuen Lee Street, Tuen Mun, NT",
+            "zh-hant": "新界屯門屯利街1號華都花園商場地下29舖"
+        },
+        "code": "852FAL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tuen Mun",
+            "zh-hant": "屯門"
+        },
+        "name_translations": {
+            "en": "Shop B29B, 1/F, Goodrich Garden, 9 Leung Tak Street, Tuen Mun, NT",
+            "zh-hant": "新界屯門良德街9號盈豐商場1樓B29B舖"
+        },
+        "code": "852FFL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tuen Mun",
+            "zh-hant": "屯門"
+        },
+        "name_translations": {
+            "en": "Shop SIH 1 (Exit E), MTR Siu Hong Station, Tuen Mun, NT",
+            "zh-hant": "新界屯門港鐵兆康站SIH 1號舖 (E出口)"
+        },
+        "code": "852FNL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tuen Mun",
+            "zh-hant": "屯門"
+        },
+        "name_translations": {
+            "en": "Shop 39, G/F, Richland Garden, 138 Wu Chui Road, Tuen Mun, NT",
+            "zh-hant": "新界屯門湖翠路138號啟豐園商場地下39號舖"
+        },
+        "code": "852UAL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tuen Mun",
+            "zh-hant": "屯門"
+        },
+        "name_translations": {
+            "en": "Shop No. 9, G/F, Yan Oi Building, No. 11 Tseng Choi Street, Tuen Mun, NT",
+            "zh-hant": "新界屯門井財街11號仁愛大廈地下9號舖"
+        },
+        "code": "852UDL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tuen Mun",
+            "zh-hant": "屯門"
+        },
+        "name_translations": {
+            "en": "Shop A135 and A136, G/F, Zone A, H.A.N.D.S, On Ting Estate, 2A Tuen Mun Heung Sze Wui Road, Tuen Mun, NT",
+            "zh-hant": "新界屯門鄉事會路2A安定邨安定商場地下A135-A136號舖"
+        },
+        "code": "852UEL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Tung Chung",
+            "zh-hant": "東涌"
+        },
+        "name_translations": {
+            "en": "Shop 207, 2/F., Yat Tung Shopping Centre, Yat Tung Estate, 8 Yat Tung Street, Tung Chung, NT",
+            "zh-hant": "新界東涌逸東街8號逸東邨逸東商場2樓207號舖"
+        },
+        "code": "852GBL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Yuen Long",
+            "zh-hant": "元朗"
+        },
+        "name_translations": {
+            "en": "Shop F,G/F, Sun King Building, 72 Hop Yick Road, Yuen Long, NT",
+            "zh-hant": "新界元朗合益路72號新景樓地下F舖"
+        },
+        "code": "852FGL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Yuen Long",
+            "zh-hant": "元朗"
+        },
+        "name_translations": {
+            "en": "Shop F, G/F, Tung Fat Building, No. 9 Ping Wui Street, Yuen Long, NT",
+            "zh-hant": "新界元朗屏會街9號同發大廈地下F鋪"
+        },
+        "code": "852FLL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Yuen Long",
+            "zh-hant": "元朗"
+        },
+        "name_translations": {
+            "en": "Shop A, G/F, Hung Fook Building, 11 Ying Fuk Street, Hung Shui Kiu, Yuen Long, NT",
+            "zh-hant": "新界元朗洪水橋盈福街11號洪福樓地下A舖"
+        },
+        "code": "852UBL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Yuen Long",
+            "zh-hant": "元朗"
+        },
+        "name_translations": {
+            "en": "Shop 27, G/F,Ho Shun King Building,3 Fung Yau Street South, Yuen Long, NT",
+            "zh-hant": "新界元朗鳳攸南街3號好順景大廈地下27舖"
+        },
+        "code": "852UFL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Yuen Long",
+            "zh-hant": "元朗"
+        },
+        "name_translations": {
+            "en": "Shop 3, G/F and Cockloft, On Tai Building, 59-67 Yuen Long On Hing Street, Yuen Long, NT",
+            "zh-hant": "新界元朗元朗安興街59-67號安泰樓地下3號舖"
+        },
+        "code": "852UGL"
+    }, {
+        "region_translations": {
+            "en": "New Territories",
+            "zh-hant": "新界"
+        },
+        "district_translations": {
+            "en": "Yuen Long",
+            "zh-hant": "元朗"
+        },
+        "name_translations": {
+            "en": "G/F23, Floor G, Golden Plaza, No. 28 Shui Che Kwun Street, Yuen Long, New Territories",
+            "zh-hant": "新界元朗水車館街28號萬金中心地下23舖"
+        },
+        "code": "852UHL"
+    }
+]

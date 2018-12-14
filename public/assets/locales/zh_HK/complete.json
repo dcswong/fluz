@@ -1,0 +1,14 @@
+{
+    "message" : "已完成下單",
+    "notice" : "請耐心等候，貨品將會盡快送達指定地點。",
+    "order": {
+        "number": "帳單編號",
+        "amount": "帳單總數",
+        "status": "帳單現況"
+    },
+    "shipping": {
+        "address": "貨品目的地",
+        "tracking": "追蹤編號"
+    },
+    "homePage": "回到主頁"
+}
