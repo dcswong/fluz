@@ -6,16 +6,15 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStroopwafel, faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
-
 import i18n from './helpers/i18n';
-import Frame from './scenes/frame';
+import Frame from './common/frame';
 
 library.add(faStroopwafel, faArrowRight, faArrowLeft);
 
 $(document).ready(() => render((
     <I18nextProvider i18n={i18n}>
-        <Router>
-            <Route path="/" component={Frame}/>
-        </Router>
+      <Router>
+        <Route path="/" component={Frame}/>
+      </Router>
     </I18nextProvider>
 ), document.getElementById('root')))

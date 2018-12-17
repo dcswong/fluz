@@ -1,30 +1,23 @@
-* {
-    font-family: 'ProximaNova', sans-serif;
-    font-weight: 200;
-    letter-spacing: 0.01em;
+:root {
+  --theme-black: #424242;
+  --grey: #9b9b9b;
 }
 
 html, body, #root {
-    height: 100%;
-    background-color: #ffffff;
-    color: var(--abt-black);
+  font-family: Roboto Condensed, sans-serif;
+  height: 100%;
+  background-color: #f9f9f9;
+  color: var(--abt-black);
 }
 #root > div {
     min-height: 100%;
-    background-color: #fff;
+    background-color: #fffdfb;
     position: relative;
 }
 
 
-
-
-
-
-
-
 /*------------------------------- frame -------------------------------*/
 .frame {
-
     flex-direction: column;
     overflow-x: hidden;
 }
@@ -41,6 +34,7 @@ html, body, #root {
 .frame .header {
   padding-top: 25px;
   margin-bottom: 80px;
+  display: block;
 }
 
 .frame .header .menu{
@@ -54,31 +48,70 @@ html, body, #root {
 
 .frame .header .cart{
   margin-top: 15px;
-  margin-left: 8.3%;
-  padding-right: 30px;
+  float: right;
 }
 
-.frame .category-block .category {
+.frame .header .cart .cart-img{
+  float: right;
+}
+
+.frame #category-block {
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+
+.frame #category-block .category {
   padding-top: 30px;
   justify-content: center;
   display: flex;
 }
 
-.frame .category-block .category .cat-style {
+.frame #category-block .category .cat-style {
+  font-family: 'Abril Fatface', sans-serif;
   font-size: 2.94em;
   font-weight: bold;
-  color: #424242;
-  border-bottom: 4px solid #424242;
-  padding: 0.35em 0.12em;
-
+  color: var(--theme-black);
+  border-bottom: 3px solid var(--theme-black);
+  padding: 0.50em 0.12em;
 }
 
-.mar-btn.mar-btn-underline {
-  color: #3bbfad !important;
-  color: var(--theme-green) !important;
-  border-bottom: 1px solid #3bbfad;
-  border-bottom: 1px solid var(--theme-green);
-  padding: 0.07em 0.12em;
+.frame #category-block .category .sorting-block {
+  width: 100%;
+}
+
+#footer-wrapper {
+  background: #f9f9f9;
+}
+
+#footer-wrapper .container-fluid.mar-container {
+  margin-left: 18.3%;
+}
+
+#footer-wrapper .container-fluid.mar-container .nav.navbar-nav {
+  margin-top: 10%;
+}
+
+#footer-wrapper .container-fluid.mar-container .nav li .mar-btn {
+  color: var(--grey);
+}
+
+#footer-wrapper .container-fluid.mar-container .nav li .mar-btn:hover {
+  background: none;
+}
+
+#footer-wrapper #sns-list {
+  display: block;
+  width: 100%;
+  max-width: 180px;
+  margin-left: 27%;
+}
+
+#footer-wrapper #sns-list li i{
+  font-size: 23px;
+  color: var(--grey);
+  margin-left: 10px;
+  margin-right: 8px;
 }
 /*------------------------------- /frame -------------------------------*/
 
