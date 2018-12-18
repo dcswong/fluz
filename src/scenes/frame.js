@@ -7,10 +7,10 @@ class Frame extends React.Component {
 
     render() {
       //<Frame></Frame>
-      //{this.Frame} //call this frame
+      //{this.Frame} //call this frames
         //{this.props.child} //call all the component wrapped by this frame
     }
 });
 
 export default Frame
-//export default translate('frame')(Frame) -> way to can i18n
+//export default translate('frame')(Frame) -> way to call i18n

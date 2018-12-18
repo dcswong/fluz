@@ -1,0 +1,32 @@
+#category-wrapper .row .category {
+  width: 100%;
+  display: block;
+  height: 100%;
+  padding-top: 30px;
+  justify-content: center;
+}
+
+#category-wrapper .row .category .cat-style {
+  font-family: 'Abril Fatface', sans-serif;
+  font-size: 2.94em;
+  font-weight: bold;
+  color: var(--theme-black);
+  border-bottom: 3px solid #000000;
+  padding: 0.50em 0.12em;
+}
+
+#category-wrapper .row .category .sorting-block {
+  width: 100%;
+  margin-top: 22%;
+}
+
+#category-wrapper .row .products {
+  margin-top: 5%;
+}
+
+#category-wrapper .row .products .image {
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  object-fit: contain;
+}
