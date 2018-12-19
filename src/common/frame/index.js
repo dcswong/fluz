@@ -1,19 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import Header from './header';
-import SubCategory from './subcat';
 import Footer from './footer';
+import Category from '../../scenes/category';
 
-export default class Frame extends React.Component {
+class Frame extends Component {
   render () {
     return (
       <React.Fragment>
         <div className="frame">
           <Header/>
-          <SubCategory/>
+          <Category/>
           <Footer/>
         </div>
       </React.Fragment>
     )
   }
 }
+export default Frame
