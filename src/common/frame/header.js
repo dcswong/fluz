@@ -20,6 +20,7 @@ class Header extends Component {
               {/*<li className="nav-item">
                 <Link to="/articlesH">Lifestyle</Link>
               </li>*/}
+              {/*Testing*/}
             </ul>
             <div className="logo col-sm-2 col-sm-3 offset-sm-4">
               <a href="/">
