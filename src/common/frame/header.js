@@ -22,7 +22,7 @@ class Header extends Component {
             </ul>
             <div className="logo col-sm-2 col-sm-3 offset-sm-4">
               <a href="/">
-                <h3 className="logoName">FLUZ.</h3>
+                <h3 className="logoName">FLUZ</h3>
               </a>
             </div>
           </div>
