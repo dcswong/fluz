@@ -2,20 +2,35 @@
   --theme-black: #424242;
   --grey: #9b9b9b;
   --light-grey: #a6a6a6;
+  --theme-grey: #333333;
+  --border-grey: #979797;
 }
 
 html, body, #root {
-  font-family: 'Roboto Condensed', sans-serif;
-  height: 100%;
-  background-color: #f9f9f9;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
   color: var(--abt-black);
+  height: 100%;
 }
 #root > div {
     min-height: 100%;
-    background-color: #fffdfb;
+    background-color: #ffffff;
     position: relative;
 }
 
+html {
+  background-color: #ffffff;
+}
+
+a{
+  text-decoration: none;
+  color: var(--theme-grey);
+}
+
+a:hover{
+  text-decoration: none;
+  color: var(--theme-grey);
+}
 
 /*------------------------------- frame -------------------------------*/
 .frame {
@@ -28,39 +43,56 @@ html, body, #root {
         display: flex;
     }
     .frame {
-        width: 1250px;
+        width: 100%;
     }
 }
 
-.frame .header {
-  padding-top: 25px;
-  margin-bottom: 80px;
-  display: block;
+/*-------Header-------*/
+#navbar {
+  z-index: 999;
+  margin-top: -10px;
+  margin-left: -10px;
 }
 
-.frame .header .menu{
+#navbar .container-fluid.mar-container {
+  position: fixed;
+  background-color: white;
+}
+
+.navbar-default {
+  background-image: linear-gradient(to bottom,#ffffff,#ffffff 100%);
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  height: 12%;
+}
+
+#navbar .nav {
   margin-top: 20px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
-.frame .header .logo {
-  justify-content: center;
-  display: flex;
+#navbar .nav .nav-item {
+  float: left;
+  padding: 5px;
+  font-size: 14px;
+  color: #58595b;
+  color: var(--dark);
 }
 
-.frame .header .cart{
+#navbar .logo {
   margin-top: 15px;
-  float: right;
+  margin-left: 30%;
+  text-align: center;
 }
 
-.frame .header .cart .cart-img{
-  float: right;
+#navbar .logo .logoName::after {
+  content: ".";
+  color: red;
 }
 
 /*-------Footer-------*/
-#footer-wrapper {
-  background: #f9f9f9;
-}
-
 #footer-wrapper .container-fluid.mar-container {
   margin-left: 18.3%;
 }
@@ -91,8 +123,11 @@ html, body, #root {
   margin-left: 10px;
   margin-right: 8px;
 }
-/*------------------------------- /frame -------------------------------*/
 
+#footer-wrapper #sns-list li i:hover{
+  color: #5e5d5d;
+}
+/*------------------------------- /frame -------------------------------*/
 
 
 /*----------------------------- SelectPicker -----------------------------*/
@@ -225,11 +260,13 @@ html, body, #root {
 
 /* ---------- ratio wrapper ---------- */
 .ratio-wrapper {
-    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
 }
 .ratio-wrapper-body {
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: 100%;
     top: 0;
     left: 0;
@@ -280,18 +317,50 @@ html, body, #root {
 }
 /*------------------------------- /checkout ----------------------------------*/
 
+/*------------------------------- membership modal ----------------------------------*/
+#navbar .loginIcon {
+  margin-top: 27px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
 
+.modal-dialog{
+  max-width: 550px;
+  min-height: 500px;
+  margin: 3rem auto;
+}
 
+.modal-header{
+  border-bottom: none;
+  padding-bottom: none;
+}
 
+.modal-body{
+  padding-top: none;
+}
+.modal-footer{
+  display: block;
+  border-top: none;
+  padding-top: 10%;
 
+}
 
+.text-field{
+  width: 400px;
+  height: 40px;
+  padding: 2px 20px;
+  margin: 10px 0;
+  font-size: 12px;
+  border-radius: 2px;
+  border: 1px #b3b3b3 solid;
+}
 
+.no-deco-link{
+  color: #000000;
+  text-decoration: underline;
+}
 
-
-
-
-
-.react-modal {
-    background: transparent;
-    box-shadow: none;
+.no-deco-link:hover{
+  color: #000000;
 }

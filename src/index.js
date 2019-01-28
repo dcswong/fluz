@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import { I18nextProvider } from 'react-i18next';
+
 //import { library } from '@fortawesome/fontawesome-svg-core'
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 //import { faStroopwafel, faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
@@ -9,7 +10,13 @@ import { I18nextProvider } from 'react-i18next';
 import i18n from './helpers/i18n';
 import Frame from './common/frame';
 
+import Landing from './scenes/landing';
+
 import Category from './scenes/category';
+
+import Articles from './scenes/Articles';
+
+import ArticlesH from './scenes/ArticlesH';
 
 //library.add(faStroopwafel, faArrowRight, faArrowLeft);
 
@@ -18,7 +25,11 @@ $(document).ready(() => render((
       <Router>
         <Frame>
           <Switch>
+            <Route exact path="/" component={ Landing }/>
             <Route exact path="/category" component={ Category }/>
+            <Route exact path="/articles" component={ Articles }/>
+            <Route exact path="/articlesH" component={ ArticlesH }/>
+
           </Switch>
         </Frame>
       </Router>
