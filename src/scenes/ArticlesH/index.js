@@ -16,7 +16,6 @@ const Heading = styled.div`
 const Imageblock = styled.div`
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
 `;
 
 const Titleblock = styled.div`

@@ -52,6 +52,7 @@ a:hover{
   z-index: 999;
   margin-top: -10px;
   margin-left: -10px;
+  margin-bottom: 0px !important;
 }
 
 #navbar .container-fluid.mar-container {
@@ -64,7 +65,7 @@ a:hover{
   border-radius: 0;
   box-shadow: none;
   border: none;
-  height: 12%;
+  height: 10%;
 }
 
 #navbar .nav {
@@ -83,7 +84,7 @@ a:hover{
 
 #navbar .logo {
   margin-top: 15px;
-  margin-left: 30%;
+  margin-left: 49%;
   text-align: center;
 }
 

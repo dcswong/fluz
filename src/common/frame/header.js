@@ -12,14 +12,14 @@ class Header extends Component {
           <div className="collapse navbar-collapse justify-content-md-between" id="navbar-content">
             <ul className="nav navbar-nav flex-row">
               <li className="nav-item">
-                <Link to="/">Fashion</Link>
+                <Link to="/articlesH">首頁</Link>
               </li>
               <li className="nav-item">
-                <Link to="/articles">Footwear</Link>
+                <Link to="/articles">類別</Link>
               </li>
-              <li className="nav-item">
+              {/*<li className="nav-item">
                 <Link to="/articlesH">Lifestyle</Link>
-              </li>
+              </li>*/}
             </ul>
             <div className="logo col-sm-2 col-sm-3 offset-sm-4">
               <a href="/">
