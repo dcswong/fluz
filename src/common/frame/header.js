@@ -17,12 +17,8 @@ class Header extends Component {
               <li className="nav-item">
                 <Link to="/articles">類別</Link>
               </li>
-              {/*<li className="nav-item">
-                <Link to="/articlesH">Lifestyle</Link>
-              </li>*/}
-              {/*Testing*/}
-              {/*Testing*/}
               
+
             </ul>
             <div className="logo col-sm-2 col-sm-3 offset-sm-4">
               <a href="/">
