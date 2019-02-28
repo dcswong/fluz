@@ -26,11 +26,10 @@ const styles = theme => ({
     },
     marginLeft: 0,
     marginTop: '20px',
-    paddingLeft: '50px',
-    width: '100%',
+    width: '50%',
     [theme.breakpoints.up('sm')]: {
       marginLeft: theme.spacing.unit,
-      width: '21%',
+      width: '10%',
     },
   },
   searchIcon: {
@@ -41,16 +40,17 @@ const styles = theme => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    marginTop: '4.5%',
   },
   inputRoot: {
     color: 'inherit',
     width: '100%',
+    marginTop: '4.5%',
   },
   inputInput: {
     paddingTop: theme.spacing.unit,
     paddingRight: theme.spacing.unit,
     paddingBottom: theme.spacing.unit,
-    paddingLeft: theme.spacing.unit * 2,
     transition: theme.transitions.create('width'),
     [theme.breakpoints.up('sm')]: {
       width: 0,

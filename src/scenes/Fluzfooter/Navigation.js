@@ -10,7 +10,6 @@ const TabGp = styled.div`
 
 const TabBtn = styled.a`
   text-decoration: none;
-  color: #808080;
   text-transform: uppercase;
   padding-left: 15px;
   padding-right: 15px;
@@ -18,7 +17,6 @@ const TabBtn = styled.a`
 
   :hover{
     text-decoration: none;
-    color: #808080;
 
   }
 
@@ -34,10 +32,6 @@ class Navigation extends Component{
       <div>
         <TabBtn href="">About</TabBtn>
         <TabBtn href="">Jobs</TabBtn>
-        <TabBtn href="">Contact</TabBtn>
-        <TabBtn href="">Imprint</TabBtn>
-        <TabBtn href="">Privacy policy</TabBtn>
-        <TabBtn href="">Terms</TabBtn>
       </div>
     )
   }

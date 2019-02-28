@@ -4,6 +4,7 @@
   --light-grey: #a6a6a6;
   --theme-grey: #333333;
   --border-grey: #979797;
+
 }
 
 html, body, #root {
@@ -37,20 +38,60 @@ a:hover{
     flex-direction: column;
     overflow-x: hidden;
 }
-@media (min-width: 960px) {
-    #root {
-        justify-content: center;
-        display: flex;
-    }
-    .frame {
-        width: 100%;
-    }
+
+
+@media (max-width: 767px) {
+  #root {
+      justify-content: center;
+      display: flex;
+  }
+  .frame {
+      width: 100%;
+  }
 }
 
 /*-------Header-------*/
+@media (min-width: 768px) {
+  #navbar .container-fluid.mar-container {
+    height: 100px;
+  }
+  #navbar .logo {
+    margin-top: 1.5%;
+    padding-right: 10%;
+    width: 95%;
+  }
+  #navbar-content {
+    width: 12%;
+  }
+  .loginIconFrame{
+    padding-top: calc(1.5% + 0.7em);
+  }
+}
+@media (max-width: 767px) {
+  #navbar .logo {
+    padding-right: 20%;
+  }
+  #navbar .container-fluid.mar-container {
+    height: 10%;
+  }
+  .loginIconFrame{
+    padding-top: calc(1% + 0.4em);
+    margin-right: -22%;
+  }
+  #navbar .nav .nav-item {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  #navbar .navbar-toggler {
+    margin-top: 7%;
+    padding-right: 10%;
+  }
+
+}
+
 #navbar {
   z-index: 999;
-  margin-top: -10px;
+  margin-top: -15px;
   margin-left: -10px;
   margin-bottom: 0px !important;
 }
@@ -58,6 +99,7 @@ a:hover{
 #navbar .container-fluid.mar-container {
   position: fixed;
   background-color: white;
+  width: 100%;
 }
 
 .navbar-default {
@@ -65,7 +107,6 @@ a:hover{
   border-radius: 0;
   box-shadow: none;
   border: none;
-  height: 10%;
 }
 
 #navbar .nav {
@@ -83,9 +124,7 @@ a:hover{
 }
 
 #navbar .logo {
-  margin-top: 15px;
-  margin-left: 49%;
-  text-align: center;
+  height: 20px;
 }
 
 #navbar .logo .logoName::after {
@@ -261,24 +300,21 @@ a:hover{
 
 /* ---------- ratio wrapper ---------- */
 .ratio-wrapper {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
+    position: relative;
 }
 .ratio-wrapper-body {
     position: absolute;
-    width: 90%;
+    width: 100%;
     height: 100%;
     top: 0;
     left: 0;
 }
+
 .ratio-wrapper-body > div,
 .ratio-wrapper-body > img {
     width: 100%;
     height: 100%;
 }
-
-
 
 
 

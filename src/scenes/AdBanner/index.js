@@ -2,17 +2,16 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const BannerDiv = styled.div`
-  padding: 3.6% 3.6%;
   background-color: #ffffff;
-  height: 280px;
-  margin-bottom: 15%;
+  object-fit: contain;
 `;
+
 class AdBanner extends Component{
   render(){
     return(
-      <BannerDiv>
+      <BannerDiv className="bannerDiv">
         <a href="">
-          <img src="../../assets/imgs/banner.png" width="1178" height="280"/>
+          <img src="../../assets/imgs/banner.png" width="100%" height="100%"/>
         </a>
       </BannerDiv>
     )

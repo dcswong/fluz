@@ -3,23 +3,36 @@ import { Link, NavLink, withRouter } from 'react-router-dom';
 
 import RatioWrapper from '../../common/ratiowrapper';
 
+import styled from 'styled-components';
+
+const textBox = styled.a`
+  display: flex;
+`;
+
 class Grid2 extends Component {
 
   render() {
 
-    var details = this.props.details;
+    var posts = this.props.posts;
 
     return (
       <div id="grid2-wrapper">
-        {details.map((detail, i) => (
-          <a href="/">
-            <div className="image-grid" key={i}>
-              <img className="grid2-image" src={detail.image}/>
-              <p className="title-text">{detail.title}</p>
-              <b className="category-text">{detail.category} | {detail.date}</b>
-            </div>
-          </a>
+        <div className="row">
+        {posts.map((post, i) => (
+          <div className="image-grid col-sm-6" key={i}>
+            <a href={"/articles/" + post.id}>
+              <RationWrapper ratio="70%" className="ratiowrapper">
+                {post.sections[0].medias.length > 0 &&
+                <img className="grid2-image" src={'url(' + (post.sections[0].medias[0] || {}).url + ')'}/>}
+              </RationWrapper>
+              <textBox>
+                <p className="title-text">{post.sections[0].title}</p>
+                <b className="category-text">{post.tags.length > 0 ? post.tags.join(' ') + ' | ' + post.time : post.time}</b>
+              </textBox>
+            </a>
+          </div>
         ))}
+        </div>
       </div>
     )
   }
@@ -30,13 +43,13 @@ export default Grid2
 Grid2.defaultProps = {
   details: [
     {
-      title: 'Cinephiles: Gloves Glove Scenes for a Gripping New YEar with Balenciaga, MSGM & Gucci',
+      title: '与画家 SAM MCKINNISS 聊名人情怀这位纽约艺术家与 THORA SIEMSEN 探讨图像制造、尬聊、地狱和亨利·方丹·拉图尔',
       image: '../../assets/imgs/grid2-1.png',
       category: 'Fashion',
       date: 'Dec 17',
     },
     {
-      title: 'The Dawn of a New History: Shushu/Tong Writer Yoshiko Kurata and Photographer Lorenzo Dalbosco Travel to China to meet the Designers behind one of Shanghai Most Exciting New Brands',
+      title: '坚韧不屈：人人都爱英式橄榄球衫经典条纹男装单品迈入 2019 年',
       image: '../../assets/imgs/grid2-2.png',
       category: 'Fashion',
       date: 'Dec 17',
