@@ -96,8 +96,10 @@ const Name = styled.p`
 
 class Articles extends Component {
 
-  componentDidMount() {
-    window.scrollTo(0,0);
+  componentDidUpdate(prevProps) {
+    if (this.props.location !== prevProps.location) {
+      window.scrollTo(0, 0)
+    }
   }
 
   render () {

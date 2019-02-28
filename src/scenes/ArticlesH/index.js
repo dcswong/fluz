@@ -103,10 +103,6 @@ const Name = styled.p`
 
 class Articles extends Component {
 
-  componentDidMount() {
-    window.scrollTo(0,0);
-  }
-
   render () {
 
     return (

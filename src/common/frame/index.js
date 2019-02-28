@@ -11,7 +11,9 @@ import RegisterModal from '../../components/RegisterModal';
 import Fluzfooter from '../../scenes/Fluzfooter';
 
 class Frame extends Component {
+
   render () {
+
     return (
       <React.Fragment>
         <div className="frame">

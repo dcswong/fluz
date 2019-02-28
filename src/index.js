@@ -27,7 +27,7 @@ $(document).ready(() => render((
           <Switch>
             <Route exact path="/" component={ Landing }/>
             <Route exact path="/category" component={ Category }/>
-            <Route exact path="/articles" component={ Articles }/>
+            <Route exact path="/articles/:id" component={ Articles }/>
             <Route exact path="/articlesH" component={ ArticlesH }/>
 
           </Switch>

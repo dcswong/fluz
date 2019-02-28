@@ -9,6 +9,17 @@ import Grid2 from './Grid2';
 import AdBanner from '../AdBanner';
 
 class Landing extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  componentDidMount() {
+    fetch('/api/articles', {
+      method: 'GET'
+    })
+    .then(response => response.json())
+    .then(result => this.setState({articles: (result.data || {}).posts || []}));
+  }
 
   render() {
 
@@ -18,15 +29,12 @@ class Landing extends Component {
     }*/
 
     return (
-     <div id="landing-wrapper">
-       <Grid3 posts={this.props.arr}/>
-       <Trend/>
-       <Grid2/>
-       <AdBanner/>
-       <Grid3 posts={this.props.arr}/>
-       <Trend/>
-       <Grid2/>
-     </div>
+      <div id="landing-wrapper">
+        <Grid3 posts={articles.splice(0, 3)}/>
+        <Grid2 posts={articles.splice(0, 2)}/>
+        <Grid3 posts={articles.splice(0, 3)}/>
+        <Grid2 posts={articles.splice(0, 2)}/>
+      </div>
     )
   }
 }
@@ -35,20 +43,20 @@ export default Landing
 Landing.defaultProps = {
   arr: [
     {
-      title: 'Archiving the 20Teens with Ayesha A. Siddiqi',
-      category: 'Fashion',
+      title: '蓝色伊甸园：夏威夷之行时尚',
+      category: '時尚',
       date: 'Dec 17',
       image: '../../assets/imgs/1.jpg',
     },
     {
-      title: 'Market Research: Gucci L Aveugle par amour Round Sunglasses',
-      category: 'Fashion',
+      title: '坚韧不屈：人人都爱英式橄榄球衫时尚',
+      category: '時尚',
       date: 'Dec 17',
       image: '../../assets/imgs/2.jpg',
     },
     {
-      title: 'Market Research: Burberry "Multicolor Scarf Print Shirt"',
-      category: 'Fashion',
+      title: '与画家 SAM MCKINNISS 聊名人情怀这位纽约艺术家与 THORA SIEMSEN 探讨图像制造、尬聊、地狱和亨利·方丹·拉图尔',
+      category: '文化',
       date: 'Dec 17',
       image: '../../assets/imgs/3.jpg',
     }
