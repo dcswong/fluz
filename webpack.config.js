@@ -34,7 +34,14 @@ var config = {
     publicPath          : "/assets/js/",
     inline              : true,
     port                : 9002,
-    host                : "0.0.0.0"
+    host                : "0.0.0.0",
+    proxy               : {
+      '/api/*': {
+        target: 'https://fluz.oneshop.hk/',
+        changeOrigin: true,
+        secure: false
+      }
+    }
   },
   plugins:[
     new webpack.HotModuleReplacementPlugin(),

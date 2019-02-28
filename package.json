@@ -53,5 +53,6 @@
   "devDependencies": {
     "json-loader": "^0.5.7",
     "webpack-dev-server": "^2.9.4"
-  }
+  },
+  "proxy": "https://fluz.oneshop.hk/"
 }
