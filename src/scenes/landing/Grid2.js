@@ -23,7 +23,7 @@ class Grid2 extends Component {
             <a href={"/articles/" + post.id}>
               <RatioWrapper ratio="70%" className="ratiowrapper">
                 {post.sections[0].medias.length > 0 &&
-                <img className="grid2-image" src={'url(' + (post.sections[0].medias[0] || {}).url + ')'}/>}
+                <img className="grid2-image" src={(post.sections[0].medias[0] || {}).url}/>}
               </RatioWrapper>
               <textBox>
                 <p className="title-text">{post.sections[0].title}</p>
