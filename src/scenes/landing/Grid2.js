@@ -17,22 +17,22 @@ class Grid2 extends Component {
 
     return (
       <div id="grid2-wrapper">
-        <div className="row">
         {posts.map((post, i) => (
-          <div className="image-grid col-sm-6" key={i}>
+          <div className="image-grid col-md-6" key={i}>
             <a href={"/articles/" + post.id}>
-              <RatioWrapper ratio="70%" className="ratiowrapper">
-                {post.sections[0].medias.length > 0 &&
-                <img className="grid2-image" src={'url(' + (post.sections[0].medias[0] || {}).url + ')'}/>}
+              <RatioWrapper ratio="60%" className="ratiowrapper">
+                {/*Imageframe*/}
+                {post.sections[0].medias.length > 0 && <div  className="grid3-image" style={{
+                  backgroundImage: 'url(' + (post.sections[0].medias[0] || {}).url + ')',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center'
+                }}></div>}
               </RatioWrapper>
-              <textBox>
-                <p className="title-text">{post.sections[0].title}</p>
-                <b className="category-text">{post.tags.length > 0 ? post.tags.join(' ') + ' | ' + post.time : post.time}</b>
-              </textBox>
+              <p className="title-text">{post.sections[0].title}</p>
+              <b className="category-text">{post.tags.length > 0 ? post.tags.join(' ') + ' | ' + post.time : post.time}</b>
             </a>
           </div>
         ))}
-        </div>
       </div>
     )
   }

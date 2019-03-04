@@ -13,6 +13,11 @@ const MenuBtn = styled.button`
   margin-top: 17%;
 `;
 
+const Logo = styled.img`
+  height: 100px;
+  width: 80px;
+`;
+
 class Header extends Component {
 
   render () {
@@ -32,7 +37,7 @@ class Header extends Component {
           <div className="logo">
             <center>
               <a href="/">
-                <img src="../assets/imgs/logo.jpeg"/>
+                <Logo src="../assets/imgs/FLUZ.svg"/>
               </a>
             </center>
           </div>

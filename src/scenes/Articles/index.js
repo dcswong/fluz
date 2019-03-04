@@ -150,16 +150,17 @@ class Articles extends Component {
 						)
 					})}
 				</div>
-				{bodyDescription.youtube && 
+				{bodyDescription.youtube &&
 					ReactHtmlParser(bodyDescription.youtube)
 				}
 			</div>
 		)
 	}
   render () {
-	  	const {post} = this.state;
-	  	const {sections, authors} = post || {};
+	  const {post} = this.state;
+	  const {sections, authors} = post || {};
 		const headerSection = lodash.head(sections) || {}
+    console.log('sections: ', sections);
 		const bodySections = lodash.drop(sections) || {}
 		if(!post) {
 			return null
@@ -176,7 +177,7 @@ class Articles extends Component {
               <TitleLine2>
 					{ReactHtmlParser(headerDescription.text)}
               </TitleLine2>
-			  	{headerDescription.youtube && 
+			  	{headerDescription.youtube &&
 					ReactHtmlParser(headerDescription.youtube)
 				}
 				{lodash.map(authors, (author, index) => {
