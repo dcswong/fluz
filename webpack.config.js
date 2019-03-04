@@ -37,7 +37,7 @@ var config = {
     host                : "0.0.0.0",
     proxy               : {
       '/api/*': {
-        target: 'https://fluz.oneshop.hk/',
+        target: 'https://fluz-1.prod.ocs.zone/',
         changeOrigin: true,
         secure: false
       }

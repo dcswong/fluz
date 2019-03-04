@@ -1,5 +1,6 @@
 import React from 'react';
 import lodash from 'lodash';
+import {isMobile} from 'react-device-detect';
 
 /**
  * ValidationHelper is a helper class that contains methods to verify if input values
@@ -67,11 +68,34 @@ function removeAllNonNumeric(value) {
     return _removeNonNumber(value);
 }
 
+function getYoutubeLinkAsFrame(link) {
+    const links = link.match(/<\s*a[^>]*>(.*?)<\s*[/]\s*a>/ig);
+    for (var i in links) {
+        var url = links[i];
+        // check youtube
+        var args = link.match(/https?\:\/\/www\.youtube\.com\/watch\?v=([a-z0-9_-]+)/i);
+        // is youtube
+        if(args) {
+            if ((args || [])[1]) {
+                const text = link.replace(/<\s*a[^>]*>(.*?)<\s*[/]\s*a>/ig, "")
+                const height = isMobile ? 210 : 385;
+                const youtube = `<iframe src="https://www.youtube.com/embed/${args[1]}" style="width: 100%; height: ${height}px;" frameBorder="0" allowFullScreen></iframe>`
+                return {text, youtube}
+            } else {
+                return {text: link}
+            }
+        } else {
+            return {text: link}
+        }
+    }
+}
+
 let ValidationHelper = {
     isNonZeroNumber,
     isNumber,
     isString,
     removeAllNonNumeric,
+    getYoutubeLinkAsFrame
 };
 
 export default ValidationHelper;
