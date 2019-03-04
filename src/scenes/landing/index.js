@@ -22,7 +22,7 @@ class Landing extends Component {
   }
 
   render() {
-
+    const articles = this.state.articles || [];
     /*var components = {
         '2-images': 3Grid,
         '3-images': 2Grid

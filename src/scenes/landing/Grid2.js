@@ -21,10 +21,10 @@ class Grid2 extends Component {
         {posts.map((post, i) => (
           <div className="image-grid col-sm-6" key={i}>
             <a href={"/articles/" + post.id}>
-              <RationWrapper ratio="70%" className="ratiowrapper">
+              <RatioWrapper ratio="70%" className="ratiowrapper">
                 {post.sections[0].medias.length > 0 &&
                 <img className="grid2-image" src={'url(' + (post.sections[0].medias[0] || {}).url + ')'}/>}
-              </RationWrapper>
+              </RatioWrapper>
               <textBox>
                 <p className="title-text">{post.sections[0].title}</p>
                 <b className="category-text">{post.tags.length > 0 ? post.tags.join(' ') + ' | ' + post.time : post.time}</b>
