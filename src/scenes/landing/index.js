@@ -3,6 +3,7 @@ import { Link, NavLink, withRouter } from 'react-router-dom';
 
 import styled from 'styled-components';
 
+import Feature from './Feature';
 import Grid3 from './Grid3';
 import Trend from '../Trend';
 import Grid2 from './Grid2';
@@ -13,23 +14,30 @@ class Landing extends Component {
     super(props);
     this.state = {};
   }
+
   componentDidMount() {
     fetch('/api/articles', {
       method: 'GET'
     })
     .then(response => response.json())
     .then(result => this.setState({articles: (result.data || {}).posts || []}));
+
+    fetch('/api/articles?tags=features', {
+      method: 'GET'
+    })
+    .then(response => response.json())
+    .then(result => this.setState({features: (result.data || {}).posts || []}));
+    console.log(this.state.features);
   }
 
   render() {
     const articles = this.state.articles || [];
-    /*var components = {
-        '2-images': 3Grid,
-        '3-images': 2Grid
-    }*/
+    const features = this.state.features || [];
+    console.log('features: ', features);
 
     return (
       <div id="landing-wrapper">
+        <Feature posts={features}/>
         <Grid3 posts={articles.splice(0, 3)}/>
         <Grid2 posts={articles.splice(0, 2)}/>
         <Grid3 posts={articles.splice(0, 3)}/>

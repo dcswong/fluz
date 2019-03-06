@@ -16,7 +16,7 @@ const Heading = styled.div`
 `;
 
 const Titleblock = styled.div`
-  width: 45%;
+  width: 60%;
   height: 100%;
   margin-top: 30px;
   margin-left: 3%;
@@ -47,18 +47,17 @@ const SnsButton = styled.a`
 `;
 
 const Imageblock = styled.div`
-  margin-right: 10px;
+  margin-left: 3%;
 `;
 
 const TextBlock = styled.div`
   display: inline-block;
-  margin-top: 7%;
   margin-left: 3%;
 `;
 
 const MarkdownText = styled.p`
   font-size: 25px;
-  margin-right: 27%;
+  margin-top: 8%;
 `;
 
 const Content = styled.div`
@@ -160,7 +159,6 @@ class Articles extends Component {
 	  const {post} = this.state;
 	  const {sections, authors} = post || {};
 		const headerSection = lodash.head(sections) || {}
-    console.log('sections: ', sections);
 		const bodySections = lodash.drop(sections) || {}
 		if(!post) {
 			return null

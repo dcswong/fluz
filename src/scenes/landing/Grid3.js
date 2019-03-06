@@ -14,7 +14,7 @@ class Grid3 extends Component {
         {posts.map((post, i) => (
           <div className="image-grid col-md-4" key={i}>
             <a href={"/articles/" + post.id}>
-              <RatioWrapper ratio="100%" className="ratiowrapper">
+              <RatioWrapper ratio="60%" className="ratiowrapper" minHeight="500px">
                 {/*Imageframe*/}
                 {post.sections[0].medias.length > 0 && <div  className="grid3-image" style={{
                   backgroundImage: 'url(' + (post.sections[0].medias[0] || {}).url + ')',

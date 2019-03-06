@@ -14,8 +14,8 @@ const MenuBtn = styled.button`
 `;
 
 const Logo = styled.img`
-  height: 100px;
-  width: 80px;
+width: 150px;
+height: 35px;
 `;
 
 class Header extends Component {
@@ -37,7 +37,7 @@ class Header extends Component {
           <div className="logo">
             <center>
               <a href="/">
-                <Logo src="../assets/imgs/FLUZ.svg"/>
+                <Logo src="../assets/imgs/F-logo.png"/>
               </a>
             </center>
           </div>

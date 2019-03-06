@@ -8,7 +8,7 @@ export default class RatioWrapper extends React.Component {
             minHeight
         }
         var paddingStyle = {
-            paddingTop: ratio || '40%',
+            paddingTop: ratio || '40%'
         }
         props.className = (props.className || '') + ' ratio-wrapper-body'
 
