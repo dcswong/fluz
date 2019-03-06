@@ -7,6 +7,8 @@ import styled from 'styled-components';
 import ValidationHelper from '../../helpers/ValidationHelper';
 import Stories from './stories';
 
+import RatioWrapper from '../../common/ratiowrapper';
+
 const Article = styled.div`
   color: var(--theme-grey);
 `;
@@ -52,12 +54,12 @@ const Imageblock = styled.div`
 
 const TextBlock = styled.div`
   display: inline-block;
-  margin-left: 3%;
+  align-items: center;
 `;
 
 const MarkdownText = styled.p`
   font-size: 25px;
-  margin-top: 8%;
+  margin-left: 3%;
 `;
 
 const Content = styled.div`
@@ -93,6 +95,10 @@ const Name = styled.p`
   margin-top: 6%;
   margin-bottom: 6%;
   font-size: 10px;
+`;
+
+const YoutubeDiv = styled.div`
+  margin-bottom: 5%;
 `;
 
 class Articles extends Component {
@@ -137,11 +143,13 @@ class Articles extends Component {
 						{ReactHtmlParser(bodyDescription.text)}
 					</Content>
 				</TextBlock>
-				<div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
+				<div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center'}}>
 					{lodash.map(medias, (media, index) => {
 						return (
-							<BannerBlock key={index}>
-								<img src={media.url}/>
+							<BannerBlock key={index} className="image-grid col-md-6">
+								<RatioWrapper ratio="60%" className="ratiowrapper" minHeight="500px">
+                  <img src={media.url}/>
+                </RatioWrapper>
 								{/* <Description>
 									1989 年，滚轮箱（Rollaboard）专利原稿；Virgil Abloh x Rimowa 联名合作系列登机箱；Robert Plath 与他发明的滚轮箱
 								</Description> */}
@@ -149,9 +157,11 @@ class Articles extends Component {
 						)
 					})}
 				</div>
-				{bodyDescription.youtube &&
-					ReactHtmlParser(bodyDescription.youtube)
-				}
+        <YoutubeDiv>
+          {bodyDescription.youtube &&
+  					ReactHtmlParser(bodyDescription.youtube)
+  				}
+        </YoutubeDiv>
 			</div>
 		)
 	}
@@ -170,23 +180,23 @@ class Articles extends Component {
           <Heading>
             <Titleblock>
               <TitleLine1>
-					{headerSection.title}
+                {headerSection.title}
               </TitleLine1>
               <TitleLine2>
-					{ReactHtmlParser(headerDescription.text)}
+                {ReactHtmlParser(headerDescription.text)}
               </TitleLine2>
-			  	{headerDescription.youtube &&
-					ReactHtmlParser(headerDescription.youtube)
-				}
-				{lodash.map(authors, (author, index) => {
-					return (
-						<div key={index}>
-							<Credits>
-								{author}
-							</Credits>
-						</div>
-					)
-				})}
+    			  	{headerDescription.youtube &&
+    					ReactHtmlParser(headerDescription.youtube)
+              }
+      				{lodash.map(authors, (author, index) => {
+      					return (
+      						<div key={index}>
+      							<Credits>
+      								{author}
+      							</Credits>
+      						</div>
+      					)
+      				})}
               <div>
                 <SnsButton href="" target="blank">
                   <i className="fab fa-facebook-f"/>
@@ -200,18 +210,18 @@ class Articles extends Component {
               </div>
             </Titleblock>
             <Imageblock>
-				{headerSection.medias && headerSection.medias[0] && headerSection.medias[0].url &&
-					<img src={headerSection.medias[0].url} width="650"/>
-				}
+      				{headerSection.medias && headerSection.medias[0] && headerSection.medias[0].url &&
+      					<img src={headerSection.medias[0].url} width="650"/>
+              }
             </Imageblock>
           </Heading>
-			{lodash.map(bodySections, (bodySection, index) => {
-				return (
-					<div key={index}>
-						{this.renderBodySection(bodySection)}
-					</div>
-				)
-			})}
+    			{lodash.map(bodySections, (bodySection, index) => {
+    				return (
+    					<div key={index}>
+    						{this.renderBodySection(bodySection)}
+    					</div>
+    				)
+    			})}
           {/* <AuthorBlock>
             <AuthDesc>
               Olivia Whittick 是 SSENSE 的全职编辑，也是SSENSE 文化专题杂志的责任编辑。

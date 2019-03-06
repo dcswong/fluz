@@ -6,14 +6,34 @@ import RatioWrapper from '../../common/ratiowrapper';
 import styled from 'styled-components';
 
 const FeatureDiv = styled.div`
-  height: 100%;
+  height: 550px;
   width: 100%;
   object-fit: contain;
+  top: 0
+  margin-bottom: 3%;
+  position: relative;
 `;
 
-const Image = styled.img`
+const LargeImg = styled.img`
   height: 100%;
   width: 100%;
+  object-fit: cover;
+`;
+
+const DetailFrame = styled.div`
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  bottom: 50px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+`;
+
+const Title = styled.h4`
+  margin-left: 3%;
+  margin-top: 33%;
+  color: white;
 `;
 
 class Feature extends Component {
@@ -22,11 +42,18 @@ class Feature extends Component {
 
     var post = this.props.posts[0];
     console.log('post ', post);
-    const media = post ? post.sections[0].medias[0] : null
-    console.log(media)
+    const media = post ? post.sections[0].medias[0].url : null
+    const id = post ? post.id : null
+    const title = post ? post.sections[0].title : null
+
     return (
       <FeatureDiv>
-
+        <a href={"/articles/" + id}>
+          <LargeImg src={media}/>
+          <DetailFrame>
+            <Title>{title}</Title>
+          </DetailFrame>
+        </a>
       </FeatureDiv>
     )
   }

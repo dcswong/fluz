@@ -98,7 +98,7 @@ a:hover{
 
 #navbar .container-fluid.mar-container {
   position: fixed;
-  background-color: white;
+  background-color: none;
   width: 100%;
 }
 
