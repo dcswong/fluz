@@ -22,7 +22,8 @@ class Feature extends Component {
 
     var post = this.props.posts[0];
     console.log('post ', post);
-
+    const media = post ? post.sections[0].medias[0] : null
+    console.log(media)
     return (
       <FeatureDiv>
 
