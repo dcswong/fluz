@@ -34,7 +34,6 @@ const TitleLine1 = styled.p`
 const TitleLine2 = styled.p`
   font: 20px bold;
   margin-bottom: 5%;
-  line-height: 1em;
 `;
 
 const Credits = styled.p`
