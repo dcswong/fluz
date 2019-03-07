@@ -38,12 +38,13 @@ const Title = styled.h4`
   font-size: 1.7em;
 `;
 
+
+
 class Feature extends Component {
 
   render() {
 
     var post = this.props.posts[0];
-    console.log('post ', post);
     const media = post ? post.sections[0].medias[0].url : null
     const id = post ? post.id : null
     const title = post ? post.sections[0].title : null
