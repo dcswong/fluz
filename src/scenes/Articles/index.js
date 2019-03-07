@@ -11,6 +11,9 @@ import RatioWrapper from '../../common/ratiowrapper';
 
 const Article = styled.div`
   color: var(--theme-grey);
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 5%;
 `;
 
 const Heading = styled.div`
@@ -18,10 +21,9 @@ const Heading = styled.div`
 `;
 
 const Titleblock = styled.div`
-  width: 60%;
+  width: 50%;
   height: 100%;
   margin-top: 30px;
-  margin-left: 3%;
 `;
 
 const TitleLine1 = styled.p`
@@ -38,6 +40,10 @@ const Credits = styled.p`
   font-size: 10px;
 `;
 
+const SocialMedia = styled.div`
+  margin-bottom: 5%;
+`;
+
 const SnsButton = styled.a`
   display: inline-block;
   margin-right: 20px;
@@ -49,7 +55,9 @@ const SnsButton = styled.a`
 `;
 
 const Imageblock = styled.div`
+  width: 50%
   margin-left: 3%;
+  margin-bottom: 3%;
 `;
 
 const TextBlock = styled.div`
@@ -59,11 +67,12 @@ const TextBlock = styled.div`
 
 const MarkdownText = styled.p`
   font-size: 25px;
-  margin-left: 3%;
+  width: 100%;
+  margin-left: 15%;
 `;
 
 const Content = styled.div`
-  margin-top: 7%;
+  margin-top: 5%;
   font-size: 15px;
   margin-left: 25%;
   margin-right: 25%;
@@ -98,7 +107,7 @@ const Name = styled.p`
 `;
 
 const YoutubeDiv = styled.div`
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 `;
 
 class Articles extends Component {
@@ -132,7 +141,9 @@ class Articles extends Component {
   }
 	renderBodySection(bodySection) {
 		const {description, medias, title} = bodySection;
+    console.log('medias: ', medias.length);
 		const bodyDescription = ValidationHelper.getYoutubeLinkAsFrame(description || '');
+    console.log('bodyDescription: ', bodyDescription);
 		return (
 			<div>
 				<TextBlock>
@@ -140,25 +151,20 @@ class Articles extends Component {
 						{title}
 					</MarkdownText>
 					<Content>
-						{ReactHtmlParser(bodyDescription.text)}
+						{ReactHtmlParser((bodyDescription || {}).text)}
 					</Content>
 				</TextBlock>
 				<div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center'}}>
 					{lodash.map(medias, (media, index) => {
-						return (
-							<BannerBlock key={index} className="image-grid col-md-6">
-								<RatioWrapper ratio="60%" className="ratiowrapper" minHeight="500px">
-                  <img src={media.url}/>
-                </RatioWrapper>
-								{/* <Description>
-									1989 年，滚轮箱（Rollaboard）专利原稿；Virgil Abloh x Rimowa 联名合作系列登机箱；Robert Plath 与他发明的滚轮箱
-								</Description> */}
-							</BannerBlock>
-						)
+            return (
+              <BannerBlock key={index}>
+                <img src={media.url} width="100%"/>
+              </BannerBlock>
+            )
 					})}
 				</div>
         <YoutubeDiv>
-          {bodyDescription.youtube &&
+          {bodyDescription && bodyDescription.youtube &&
   					ReactHtmlParser(bodyDescription.youtube)
   				}
         </YoutubeDiv>
@@ -183,9 +189,9 @@ class Articles extends Component {
                 {headerSection.title}
               </TitleLine1>
               <TitleLine2>
-                {ReactHtmlParser(headerDescription.text)}
+                {ReactHtmlParser((headerDescription || {}).text)}
               </TitleLine2>
-    			  	{headerDescription.youtube &&
+    			  	{headerDescription && headerDescription.youtube &&
     					ReactHtmlParser(headerDescription.youtube)
               }
       				{lodash.map(authors, (author, index) => {
@@ -197,7 +203,7 @@ class Articles extends Component {
       						</div>
       					)
       				})}
-              <div>
+              <SocialMedia>
                 <SnsButton href="" target="blank">
                   <i className="fab fa-facebook-f"/>
                 </SnsButton>
@@ -207,11 +213,11 @@ class Articles extends Component {
                 <SnsButton href="" target="blank">
                   <i className="fab fa-pinterest-p"/>
                 </SnsButton>
-              </div>
+              </SocialMedia>
             </Titleblock>
             <Imageblock>
       				{headerSection.medias && headerSection.medias[0] && headerSection.medias[0].url &&
-      					<img src={headerSection.medias[0].url} width="650"/>
+      					<img src={headerSection.medias[0].url} width="100%"/>
               }
             </Imageblock>
           </Heading>
@@ -231,28 +237,9 @@ class Articles extends Component {
             </Name>
           </AuthorBlock> */}
         </Article>
-
         <Stories/>
       </React.Fragment>
     )
   }
 }
 export default Articles
-
-/*<div className="menu col-sm-2">
-  <img src="/assets/imgs/icons/icons8-menu-filled-50.png" height="20" width="20"/>
-</div>
-<div className="cart col-sm-2">
-  <img className="cart-img" src="/assets/imgs/icons/icons8-shopping-basket-30.png" height="30" width="30"/>
-</div>
-</div>
-<img src="/assets/imgs/lazynoon.png" height="65" width="80"/>
-
-<a className="mar-btn" href="" target="blank">
-  <i className="fab fa-twitter"/>
-</a>
-<a className="mar-btn" href="" target="blank">
-  <i className="fab fa-pinterest-p"/>
-</a>
-
-  */

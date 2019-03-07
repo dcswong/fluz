@@ -9,7 +9,6 @@ const FeatureDiv = styled.div`
   height: 550px;
   width: 100%;
   object-fit: contain;
-  top: 0
   margin-bottom: 3%;
   position: relative;
 `;
@@ -31,9 +30,12 @@ const DetailFrame = styled.div`
 `;
 
 const Title = styled.h4`
+  width: 45%;
   margin-left: 3%;
-  margin-top: 33%;
+  margin-top: 30%;
   color: white;
+  line-height: 1.5em;
+  font-size: 1.7em;
 `;
 
 class Feature extends Component {

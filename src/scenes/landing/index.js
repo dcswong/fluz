@@ -13,9 +13,10 @@ class Landing extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+    this.getArticles = this.getArticles.bind(this);
   }
 
-  componentDidMount() {
+  getArticles() {
     fetch('/api/articles', {
       method: 'GET'
     })
@@ -28,6 +29,14 @@ class Landing extends Component {
     .then(response => response.json())
     .then(result => this.setState({features: (result.data || {}).posts || []}));
     console.log(this.state.features);
+  }
+
+  componentDidMount() {
+    this.getArticles();
+  }
+
+  componentWillMount() {
+    this.getArticles();
   }
 
   render() {
