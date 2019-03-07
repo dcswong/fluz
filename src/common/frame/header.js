@@ -14,8 +14,9 @@ const MenuBtn = styled.button`
 `;
 
 const Logo = styled.img`
-width: 80px;
-height: 30px;
+  margin-top: 5px;
+  width: 80px;
+  height: 20px;
 `;
 
 class Header extends Component {
@@ -31,13 +32,13 @@ class Header extends Component {
 
           <div className="collapse navbar-collapse justify-content-md-between" id="navbar-content">
             <MenuBtn>
-              <img height="25px" width="25px"src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAC4gAAAuIBSbr4BAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAA4SURBVFiF7dWxDQAgDAQxYP+dnw2gSBEh7AmuuzGAt80k6Y44Wd0BNwIBqPHiKoEA1HhxlUDgdxty4gwKOmUonAAAAABJRU5ErkJggg=="/>
+              <img height="25px" width="25px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAADmwAAA5sBPN8HMQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABWSURBVGiB7dbBDYBADANBg6jsGgM6pwgiJTrNVGD/NgGgwbHWerpHVLiS3N0jKpzdA6o4Ms2V5O0eAQAUkfHTbBONjkwj4wFgJzJ+mm2i0ZFpZDwAf3xp1gcAEJJAPwAAAABJRU5ErkJggg=="/>
             </MenuBtn>
           </div>
           <div className="logo">
             <center>
               <a href="/">
-                <Logo src="../assets/imgs/Flogo-white.svg"/>
+                <Logo src="../assets/imgs/F-logo.png"/>
               </a>
             </center>
           </div>

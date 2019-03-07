@@ -53,6 +53,7 @@ a:hover{
 /*-------Header-------*/
 @media (min-width: 768px) {
   #navbar .container-fluid.mar-container {
+    height: 80px;
   }
   #navbar .logo {
     margin-top: 1.5%;
@@ -97,13 +98,12 @@ a:hover{
 
 #navbar .container-fluid.mar-container {
   position: fixed;
-  /*background-color: none;*/
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: white;
   width: 100%;
 }
 
 .navbar-default {
-  background-image: linear-gradient(to bottom,#ffffff,#ffffff 0%);
+  background-image: linear-gradient(to bottom,#ffffff,#ffffff 100%);
   border-radius: 0;
   box-shadow: none;
   border: none;
