@@ -13,7 +13,7 @@ const Article = styled.div`
   color: var(--theme-grey);
   margin-left: 3%;
   margin-right: 3%;
-  margin-top: 5%;
+  margin-top: 4%;
 `;
 
 const Heading = styled.div`
@@ -141,6 +141,7 @@ class Articles extends Component {
   }
 	renderBodySection(bodySection) {
 		const {description, medias, title} = bodySection;
+    console.log('bodySection', bodySection);
     console.log('medias: ', medias.length);
 		const bodyDescription = ValidationHelper.getYoutubeLinkAsFrame(description || '');
     console.log('bodyDescription: ', bodyDescription);
@@ -180,6 +181,7 @@ class Articles extends Component {
 			return null
 		}
 		const headerDescription = ValidationHelper.getYoutubeLinkAsFrame(headerSection.description || '');
+    console.log('headerDescription: ', headerDescription);
     return (
       <React.Fragment>
         <Article>

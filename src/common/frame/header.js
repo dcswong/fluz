@@ -10,13 +10,17 @@ const MenuBtn = styled.button`
   cursor: pointer;
   align-items: center;
   justify-content: center;
-  margin-top: 27%;
+  margin-top: 30%;
 `;
 
 const Logo = styled.img`
   margin-top: 5px;
   width: 80px;
   height: 20px;
+  @media (max-width: 767px) {
+    margin-top: 15px;
+    margin-right: 15px;
+  }
 `;
 
 class Header extends Component {
@@ -32,7 +36,7 @@ class Header extends Component {
 
           <div className="collapse navbar-collapse justify-content-md-between" id="navbar-content">
             <MenuBtn>
-              <img height="25px" width="25px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAADmwAAA5sBPN8HMQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABWSURBVGiB7dbBDYBADANBg6jsGgM6pwgiJTrNVGD/NgGgwbHWerpHVLiS3N0jKpzdA6o4Ms2V5O0eAQAUkfHTbBONjkwj4wFgJzJ+mm2i0ZFpZDwAf3xp1gcAEJJAPwAAAABJRU5ErkJggg=="/>
+              <img height="25px" width="25px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAADmwAAA5sBPN8HMQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABYSURBVGiB7dbBDYAwDATBGKWk9AdUHorAkq1opoK7344BQIFYaz3VIzLMvfddPSLDVT0giyPdzIh4q0cAAElkfDfHRKMj3ch4ADiJjO/mmGh0pBsZD8AfH0ASD4ILc/QhAAAAAElFTkSuQmCC"/>
             </MenuBtn>
           </div>
           <div className="logo">

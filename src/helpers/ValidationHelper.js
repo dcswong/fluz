@@ -9,7 +9,7 @@ import {isMobile} from 'react-device-detect';
 
 /**
  * Check if number (or number string) is a valid non-zero number.
- * @param {number} number 
+ * @param {number} number
  * @return {boolean} return false if conditions are not met for non-zero number
  */
 function isNonZeroNumber(number) {
@@ -18,7 +18,7 @@ function isNonZeroNumber(number) {
 
 /**
  * Check if number (or number string) is a valid number.
- * @param {number} number 
+ * @param {number} number
  * @return {boolean} return false if conditions are not met for non-zero number
  */
 function isNumber(number) {
@@ -27,7 +27,7 @@ function isNumber(number) {
 
 /**
  * Check if input string value is a string type.
- * @param {String} string 
+ * @param {String} string
  * @return {boolean} return false if value is not a string.
  */
 function isString(string) {
@@ -61,7 +61,7 @@ function _removeNonNumber(value, keepNegativeSign = false) {
 
 /**
  * Remove all non-numeric non-decimal place characters from input string value.
- * @param {string} value 
+ * @param {string} value
  * @return {value} return value with non-numeric non decimal characters removed
  */
 function removeAllNonNumeric(value) {
@@ -69,7 +69,12 @@ function removeAllNonNumeric(value) {
 }
 
 function getYoutubeLinkAsFrame(link) {
+    console.log('link', link);
     const links = link.match(/<\s*a[^>]*>(.*?)<\s*[/]\s*a>/ig);
+    console.log('links: ', links);
+    if (!links) {
+      return {text: link}
+    }
     for (var i in links) {
         var url = links[i];
         // check youtube
