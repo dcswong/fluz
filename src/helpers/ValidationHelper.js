@@ -69,9 +69,7 @@ function removeAllNonNumeric(value) {
 }
 
 function getYoutubeLinkAsFrame(link) {
-    console.log('link', link);
     const links = link.match(/<\s*a[^>]*>(.*?)<\s*[/]\s*a>/ig);
-    console.log('links: ', links);
     if (!links) {
       return {text: link}
     }

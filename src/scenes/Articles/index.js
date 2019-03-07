@@ -28,7 +28,7 @@ const Titleblock = styled.div`
 
 const TitleLine1 = styled.p`
   font: 50px bold;
-  margin-bottom: 10%;
+  margin-bottom: 7%;
 `;
 
 const TitleLine2 = styled.p`

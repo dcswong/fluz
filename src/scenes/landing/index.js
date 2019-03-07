@@ -17,17 +17,24 @@ class Landing extends Component {
   }
 
   getArticles() {
-    fetch('/api/articles', {
-      method: 'GET'
-    })
-    .then(response => response.json())
-    .then(result => this.setState({articles: (result.data || {}).posts || []}));
-
     fetch('/api/articles?tags=features', {
       method: 'GET'
     })
     .then(response => response.json())
     .then(result => this.setState({features: (result.data || {}).posts || []}));
+    console.log(this.state.features);
+
+    fetch('/api/articles?tags=top', {
+      method: 'GET'
+    })
+    .then(response => response.json())
+    .then(result => this.setState({top: (result.data || {}).posts || []}));
+
+    fetch('/api/articles?tags=bottom', {
+      method: 'GET'
+    })
+    .then(response => response.json())
+    .then(result => this.setState({bottom: (result.data || {}).posts || []}));
     console.log(this.state.features);
   }
 
@@ -40,17 +47,20 @@ class Landing extends Component {
   }
 
   render() {
-    const articles = this.state.articles || [];
     const features = this.state.features || [];
+    const top = this.state.top || [];
+    const bottom = this.state.bottom || [];
     console.log('features: ', features);
+    console.log('top: ', top);
+    console.log('bottom: ', bottom);
 
     return (
       <div id="landing-wrapper">
         <Feature posts={features}/>
-        <Grid3 posts={articles.splice(0, 3)}/>
-        <Grid2 posts={articles.splice(0, 2)}/>
-        <Grid3 posts={articles.splice(0, 3)}/>
-        <Grid2 posts={articles.splice(0, 2)}/>
+        <Grid3 posts={top.splice(0, 3)}/>
+        <Grid2 posts={bottom.splice(0, 2)}/>
+        <Grid3 posts={top.splice(0, 3)}/>
+        <Grid2 posts={bottom.splice(0, 2)}/>
       </div>
     )
   }
