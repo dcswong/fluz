@@ -52,31 +52,16 @@ a:hover{
 
 /*-------Header-------*/
 @media (min-width: 768px) {
-  #navbar .container-fluid.mar-container {
-    height: 80px;
-  }
-  #navbar .logo {
-    margin-top: 1.5%;
-    padding-right: 10%;
-    width: 95%;
-  }
-  #navbar-content {
-    width: 12%;
-  }
+  /*#navbar .container-fluid.mar-container {
+    height: 10%;
+  }*/
   .loginIconFrame{
     padding-top: calc(1.5% + 0.7em);
   }
 }
 @media (max-width: 767px) {
-  #navbar .logo {
-    padding-right: 20%;
-  }
-  #navbar .container-fluid.mar-container {
+  /*#navbar .container-fluid.mar-container {
     height: 10%;
-  }
-  .loginIconFrame{
-    padding-top: calc(1% + 0.4em);
-    margin-right: -22%;
   }
   #navbar .nav .nav-item {
     padding-top: 7px;
@@ -86,17 +71,25 @@ a:hover{
     margin-top: 7%;
     padding-right: 10%;
   }
-
+  */
+  .loginIconFrame{
+    padding-top: calc(1% + 0.4em);
+    margin-right: -22%;
+  }
 }
 
 #navbar {
   z-index: 999;
-  margin-top: -15px;
-  margin-left: -10px;
   margin-bottom: 0px !important;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
 }
 
-#navbar .container-fluid.mar-container {
+/*#navbar .container-fluid.mar-container {
   position: fixed;
   background-color: white;
   width: 100%;
@@ -107,29 +100,76 @@ a:hover{
   border-radius: 0;
   box-shadow: none;
   border: none;
+}*/
+/*--------------------Hamburger Menu----------------------*/
+#page-wrap {
+  text-align: center;
+  overflow: auto;
 }
 
-#navbar .nav {
-  margin-top: 20px;
-  margin-left: -15px;
-  margin-right: -15px;
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #424242;
+  transition: color 0.2s;
 }
 
-#navbar .nav .nav-item {
-  float: left;
-  padding: 5px;
-  font-size: 14px;
-  color: #58595b;
-  color: var(--dark);
+.bm-item:hover {
+  color: white;
 }
 
-#navbar .logo {
-  height: 20px;
+.bm-burger-button {
+  position: fixed;
+  width: 23px;
+  height: 15px;
+  left: 30px;
+  top: 17px;
 }
 
-#navbar .logo .logoName::after {
-  content: ".";
-  color: red;
+.bm-burger-bars {
+  background: #424242;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+.bm-cross {
+  background: #ffffff;
+}
+
+.bm-menu-wrap {
+  top: 0;
+  left: 0;
+}
+
+.bm-menu {
+  display: inline-block;
+  background: rgb(193, 193, 193);
+  padding: 2.7em 3em 0;
+  font-size: 1.15em;
+  width: 85%;
+}
+
+.bm-cross-button {
+  top: 0;
+  left: 10px;
+}
+
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+.bm-overlay {
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 /*-------Footer-------*/

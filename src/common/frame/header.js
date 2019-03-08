@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import { Link, NavLink, withRouter } from 'react-router-dom';
 import SearchBar from '../../scenes/widgets/searchBar';
 import styled from 'styled-components';
+import Sidebar from '../../common/sidebar';
 
-const MenuBtn = styled.button`
+/*const MenuBtn = styled.button`
   background: none;
   border: none;
   padding: 0;
@@ -11,15 +12,20 @@ const MenuBtn = styled.button`
   align-items: center;
   justify-content: center;
   margin-top: 30%;
+`;*/
+
+const LogoDiv = styled.div`
+  width: 100%;
+  text-align: center;
 `;
 
 const Logo = styled.img`
-  margin-top: 5px;
+  display: inline-block;
+  margin: 0 auto;
   width: 80px;
   height: 20px;
   @media (max-width: 767px) {
-    margin-top: 15px;
-    margin-right: 15px;
+    margin-left: 3%;
   }
 `;
 
@@ -29,24 +35,17 @@ class Header extends Component {
 
     return (
       <nav id="navbar" className="navbar navbar-default navbar-expand-md">
-        <div className="container-fluid mar-container">
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAABfAAAAXwBsrqMZwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAA0SURBVEiJY2AYBcMeMMIYTk5O/6lp8L59+xgZGBgYmKhp6CgYnGA0FY0CysFoKhoFQwAAAL0fDAptPLs1AAAAAElFTkSuQmCC"/>
-          </button>
-
-          <div className="collapse navbar-collapse justify-content-md-between" id="navbar-content">
+          {/*<div className="collapse navbar-collapse justify-content-md-between" id="navbar-content">
             <MenuBtn>
               <img height="25px" width="25px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAADmwAAA5sBPN8HMQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABYSURBVGiB7dbBDYAwDATBGKWk9AdUHorAkq1opoK7344BQIFYaz3VIzLMvfddPSLDVT0giyPdzIh4q0cAAElkfDfHRKMj3ch4ADiJjO/mmGh0pBsZD8AfH0ASD4ILc/QhAAAAAElFTkSuQmCC"/>
             </MenuBtn>
-          </div>
-          <div className="logo">
-            <center>
-              <a href="/">
-                <Logo src="../assets/imgs/F-logo.png"/>
-              </a>
-            </center>
-          </div>
-        </div>
+          </div>*/}
+          <Sidebar/>
+          <LogoDiv>
+            <a href="/">
+              <Logo src="../assets/imgs/F-logo.png"/>
+            </a>
+          </LogoDiv>
       </nav>
     )
   }

@@ -16,9 +16,6 @@
     margin-right: calc(2% + 1.3em);
     margin-bottom: calc(4% + 1.3em);
   }
-  #landing-wrapper {
-    padding-top: 20px;
-  }
 }
 
 @media (max-width: 767px) {
