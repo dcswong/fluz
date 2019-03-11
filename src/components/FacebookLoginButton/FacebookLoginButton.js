@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import { GoogleLogin } from 'react-google-login';
+import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props'
 
-class GoogleLoginButton extends Component {
-
-    responseGoogle(response) {
+class FacebookLoginButton extends Component {
+     
+    responseFacebook(response) {
         console.log(response)
         // this.createOrLoginUser(response)
     }
@@ -29,17 +29,16 @@ class GoogleLoginButton extends Component {
 
     render() {
         return (
-            <GoogleLogin
-                clientId="655632246734-5ntvg2eo395sf8ohabhg4j39vll6ve5u.apps.googleusercontent.com"
-                buttonText="Login"
-                render={(renderProps) => (
-                    <button onClick={renderProps.onClick}>Google Login</button>
+            <FacebookLogin
+                appId="262726651112348"
+                autoLoad
+                callback={(response) => this.responseFacebook(response)}
+                render={renderProps => (
+                    <button onClick={renderProps.onClick}>This is my custom FB button</button>
                 )}
-                onSuccess={(response) => this.responseGoogle(response)}
-                onFailure={(response) => this.responseGoogle(response)}
             />
         )
     }
 }
 
-export default GoogleLoginButton;
+export default FacebookLoginButton;

@@ -4,6 +4,7 @@ import SearchBar from '../../scenes/widgets/searchBar';
 import styled from 'styled-components';
 import Sidebar from '../../common/sidebar';
 import GoogleLoginButton from '../../components/GoogleLoginButton';
+import FacebookLoginButton from '../../components/FacebookLoginButton';
 /*const MenuBtn = styled.button`
   background: none;
   border: none;
@@ -47,7 +48,10 @@ class Header extends Component {
             </a>
           </LogoDiv>
           <div>
+          <div style={{display: 'flex'}}>
+            <FacebookLoginButton/>
             <GoogleLoginButton/>
+          </div>
           </div>
       </nav>
     )
