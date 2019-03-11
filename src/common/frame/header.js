@@ -3,7 +3,7 @@ import { Link, NavLink, withRouter } from 'react-router-dom';
 import SearchBar from '../../scenes/widgets/searchBar';
 import styled from 'styled-components';
 import Sidebar from '../../common/sidebar';
-
+import GoogleLoginButton from '../../components/GoogleLoginButton';
 /*const MenuBtn = styled.button`
   background: none;
   border: none;
@@ -46,6 +46,9 @@ class Header extends Component {
               <Logo src="../assets/imgs/F-logo.png"/>
             </a>
           </LogoDiv>
+          <div>
+            <GoogleLoginButton/>
+          </div>
       </nav>
     )
   }
