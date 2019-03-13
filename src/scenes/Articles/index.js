@@ -11,29 +11,47 @@ import RatioWrapper from '../../common/ratiowrapper';
 
 const Article = styled.div`
   color: var(--theme-grey);
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: calc(2% + 1em);
+  margin-right: calc(2% + 1em);
   margin-top: 4%;
 `;
 
 const Heading = styled.div`
-  display: flex;
+ @media (min-width: 768px) {
+   display: flex;
+ }
+ @media (max-width: 767px) {
+   display: block;
+ }
 `;
 
 const Titleblock = styled.div`
-  width: 50%;
-  height: 100%;
-  margin-top: 30px;
+  @media (min-width: 768px) {
+    width: 50%;
+    height: 100%;
+    margin-top: 3%;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+    height: 100%;
+    padding-top: 18%;
+    padding-bottom: 5%;
+  }
 `;
 
 const TitleLine1 = styled.p`
-  font: 50px bold;
+  @media (min-width: 768px) {
+    font: 50px bold;
+  }
+  @media (max-width: 767px) {
+    font: 30px bold;
+    text-align: center;
+  }
   margin-bottom: 7%;
 `;
 
 const TitleLine2 = styled.p`
   font: 20px bold;
-  margin-bottom: 5%;
 `;
 
 const Credits = styled.p`
@@ -41,42 +59,55 @@ const Credits = styled.p`
 `;
 
 const SocialMedia = styled.div`
-  margin-bottom: 5%;
+  margin-top: 3%;
+  @media (max-width: 767px) {
+    width: 100%;
+    text-align: center;
+  }
 `;
 
 const SnsButton = styled.a`
   display: inline-block;
   margin-right: 20px;
   color: var(--theme-grey);
-
   :hover {
     color: var(--theme-grey);
   }
 `;
 
 const Imageblock = styled.div`
-  width: 50%
+  @media (max-width: 767px) {
+    width: 100%;
+    margin: 5% 5% 10% 0;
+  }
+  width: 50%;
   margin-left: 3%;
   margin-bottom: 3%;
 `;
 
 const TextBlock = styled.div`
-  display: inline-block;
   align-items: center;
 `;
 
 const MarkdownText = styled.p`
+  @media (max-width: 767px) {
+    font-size: 20px;
+  }
+  margin-top: 4%;
   font-size: 25px;
   width: 100%;
-  margin-left: 15%;
 `;
 
 const Content = styled.div`
-  margin-top: 5%;
-  font-size: 15px;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-bottom: 5%;
+  @media (min-width: 768px) {
+    text-align: center;
+    font-size: 20px;
+    padding: 4% 25% 4% 30%;
+  }
+  @media (max-width: 767px) {
+    font-size: 15px;
+    margin-bottom: 5%;
+  }
 `;
 
 const BannerBlock = styled.div`
@@ -141,10 +172,7 @@ class Articles extends Component {
   }
 	renderBodySection(bodySection) {
 		const {description, medias, title} = bodySection;
-    console.log('bodySection', bodySection);
-    console.log('medias: ', medias.length);
 		const bodyDescription = ValidationHelper.getYoutubeLinkAsFrame(description || '');
-    console.log('bodyDescription: ', bodyDescription);
 		return (
 			<div>
 				<TextBlock>
@@ -159,7 +187,7 @@ class Articles extends Component {
 					{lodash.map(medias, (media, index) => {
             return (
               <BannerBlock key={index}>
-                <img src={media.url} width="100%"/>
+                <img src={media.url} width="80%" height="30%"/>
               </BannerBlock>
             )
 					})}
@@ -181,7 +209,6 @@ class Articles extends Component {
 			return null
 		}
 		const headerDescription = ValidationHelper.getYoutubeLinkAsFrame(headerSection.description || '');
-    console.log('headerDescription: ', headerDescription);
     return (
       <React.Fragment>
         <Article>

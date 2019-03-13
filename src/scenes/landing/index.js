@@ -42,7 +42,6 @@ class Landing extends Component {
   render() {
     const articles = this.state.articles || [];
     const features = this.state.features || [];
-    console.log('features: ', features);
 
     return (
       <div id="landing-wrapper">

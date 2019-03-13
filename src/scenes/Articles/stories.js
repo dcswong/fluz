@@ -6,10 +6,15 @@ import Related from './related';
 import Next from './next';
 
 const StoryWrapper = styled.div`
-  margin-left: 2.4%;
-  margin-right: 2.4%;
-  margin-bottom: 5%;
-  display: flex;
+  @media (min-width: 768px) {
+    margin-left: 2.4%;
+    margin-right: 2.4%;
+    margin-bottom: 5%;
+    display: flex;
+  }
+  @media (max-width: 767px) {
+    display: block;
+  }
 `;
 
 class Stories extends Component {

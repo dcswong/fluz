@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import { Link, NavLink, withRouter } from 'react-router-dom';
 import SearchBar from '../../scenes/widgets/searchBar';
 import styled from 'styled-components';
-import Sidebar from '../../common/sidebar';
-import GoogleLoginButton from '../../components/GoogleLoginButton';
-import FacebookLoginButton from '../../components/FacebookLoginButton';
+import Sidebar from './sidebar';
 /*const MenuBtn = styled.button`
   background: none;
   border: none;
@@ -25,14 +23,38 @@ const Logo = styled.img`
   margin: 0 auto;
   width: 80px;
   height: 20px;
+  @media (min-width: 768px) {
+    margin-left: 5%;
+  }
   @media (max-width: 767px) {
     margin-left: 3%;
   }
 `;
 
 class Header extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      categories: []
+    };
+  }
+
+  componentDidMount() {
+    fetch(`/api/shops/session`, {
+			method: 'GET'
+		})
+		.then(response => response.json())
+		.then(result => {
+			if(result.result) {
+				this.setState({
+					categories: (result.data.shops[0].tags).split(',')
+				})
+			}
+		});
+    }
 
   render () {
+    const categories = this.state.categories || [];
 
     return (
       <nav id="navbar" className="navbar navbar-default navbar-expand-md">
@@ -41,18 +63,12 @@ class Header extends Component {
               <img height="25px" width="25px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAADmwAAA5sBPN8HMQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABYSURBVGiB7dbBDYAwDATBGKWk9AdUHorAkq1opoK7344BQIFYaz3VIzLMvfddPSLDVT0giyPdzIh4q0cAAElkfDfHRKMj3ch4ADiJjO/mmGh0pBsZD8AfH0ASD4ILc/QhAAAAAElFTkSuQmCC"/>
             </MenuBtn>
           </div>*/}
-          <Sidebar/>
+          <Sidebar categories={categories}/>
           <LogoDiv>
             <a href="/">
               <Logo src="../assets/imgs/F-logo.png"/>
             </a>
           </LogoDiv>
-          <div>
-          <div style={{display: 'flex'}}>
-            <FacebookLoginButton/>
-            <GoogleLoginButton/>
-          </div>
-          </div>
       </nav>
     )
   }

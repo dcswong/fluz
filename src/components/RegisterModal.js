@@ -12,17 +12,23 @@ const ModalDiv = styled.div`
   text-align: center;
 `;
 
-const CenterText = styled.div`
-
+const LogoDiv = styled.div`
+  width: 100%;
+  text-align: center;
 `;
 
 const BodyDiv = styled.div`
-  padding: 0 10%;
+ @media (min-width: 768px) {
+   padding: 0 10%;
+ }
+ @media (max-width: 767px) {
+   padding: 0 5%;
+ }
   text-align: center;
 `;
 
 const LoginInfo = styled.div`
-  margin-top: 50px;
+  margin-top: 7%;
 `;
 
 const LoginSetting = styled.div`
@@ -32,14 +38,13 @@ const LoginSetting = styled.div`
   justify-content: space-between;
 `;
 
-const Logo = styled.h3`
-  text-align: center;
-  :after{
-
-    content: ".";
-    color: red;
+const Logo = styled.img`
+  display: inline-block;
+  margin: 0 auto;
+  width: 80px;
+  height: 20px;
+  @media (max-width: 767px) {
   }
-
 `;
 
 const Remember = styled.input`
@@ -52,10 +57,18 @@ const Remember = styled.input`
 `;
 
 const LoginBtn = styled.button`
+@media (min-width: 768px) {
   width: 400px;
   height: 40px;
+}
+@media (max-width: 767px) {
+  width: 280px;
+  height: 30px;
+  font-size: 12px;
+}
   border: 1px solid #000000;
   margin-top: 5%;
+  border-radius: 2px;
 
   &.loginbtn-top{
     color: #ffffff;
@@ -69,8 +82,9 @@ const Terms = styled.div`
 `;
 
 const CloseTag = styled.span`
-  font-weight: lighter;
+  font-size: 30px;
 `;
+
 class RegisterModal extends Component{
   constructor (props) {
     super(props);
@@ -87,7 +101,7 @@ class RegisterModal extends Component{
   render(){
     return(
       <div>
-        <ModalDiv className="modal fade" id="regModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <ModalDiv className="modal fade" id="regModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="false">
           <div className="modal-dialog" role="document">
             <div className="modal-content">
               <div className="modal-header">
@@ -98,22 +112,22 @@ class RegisterModal extends Component{
               </div>
               <div className="modal-body">
                 <BodyDiv>
-                  <CenterText>
-                    <Logo className="modal-title">FLUZ</Logo>
-                  </CenterText>
+                  <LogoDiv>
+                    <Logo src="../assets/imgs/F-logo.png"/>
+                  </LogoDiv>
                   <LoginInfo>
                     <input type="email" className="text-field" placeholder="電郵地址/手機號碼"></input>
                     <input type="email" className="text-field" placeholder="請輸入密碼"></input>
                   </LoginInfo>
                   <LoginSetting>
                   </LoginSetting>
+                  <div>
+                    <LoginBtn className="loginbtn-top">立即加入</LoginBtn>
+                  </div>
+                  <div>
+                    <LoginBtn className="register-bottom" onClick={this.swapModal}>登入</LoginBtn>
+                  </div>
                 </BodyDiv>
-                <div>
-                  <LoginBtn className="loginbtn-top">立即加入</LoginBtn>
-                </div>
-                <div>
-                  <LoginBtn className="register-bottom" onClick={this.swapModal}>登入</LoginBtn>
-                </div>
                 <Terms>
                   如你提交個人資料，將被視為你已閱讀、理解、同意並承諾遵守
                 <a href="" className="no-deco-link">通用條款和條件</a>，<a href="" className="no-deco-link">使用條款</a> 及<a href="" className="no-deco-link">FLUZ.網路私隱政策</a> 。

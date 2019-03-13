@@ -44,6 +44,8 @@ a:hover{
   #root {
       justify-content: center;
       display: flex;
+      overflow: auto;
+      height: 100%;
   }
   .frame {
       width: 100%;
@@ -111,8 +113,16 @@ a:hover{
   display: inline-block;
   text-decoration: none;
   margin-bottom: 10px;
-  color: #424242;
+  color: #727272;
   transition: color 0.2s;
+}
+
+#subtitle.bm-item{
+  color: #333333;
+}
+
+#subtitle.bm-item:hover{
+  color: #333333 !important;
 }
 
 .bm-item:hover {
@@ -395,42 +405,64 @@ a:hover{
 /*------------------------------- /checkout ----------------------------------*/
 
 /*------------------------------- membership modal ----------------------------------*/
-#navbar .loginIcon {
-  margin-top: 27px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 10px;
+.modal-open .modal {
+  padding-right: 0px !important;
 }
 
-.modal-dialog{
-  max-width: 550px;
-  min-height: 500px;
-  margin: 3rem auto;
+@media (min-width: 768px) {
+  .modal-dialog {
+    max-width: 550px;
+    min-height: 500px;
+    margin: 3rem auto;
+  }
+  .text-field{
+    width: 400px;
+    height: 40px;
+    padding: 2px 20px;
+    margin: 0.7em 0;
+    font-size: 12px;
+    border-radius: 2px;
+    border: 1px #b3b3b3 solid;
+  }
+}
+
+@media (max-width: 767px) {
+  .modal-dialog {
+    max-width: 350px;
+    min-height: 200px;
+    margin: 3rem auto;
+  }
+  .text-field{
+    width: 280px;
+    height: 30px;
+    padding: 2px 20px;
+    margin: 0.7em 0;
+    font-size: 12px;
+    border-radius: 2px;
+    border: 1px #b3b3b3 solid;
+  }
+}
+
+#navbar .loginIcon {
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .modal-header{
   border-bottom: none;
   padding-bottom: none;
+  height: 50px;
 }
 
 .modal-body{
   padding-top: none;
 }
+
 .modal-footer{
   display: block;
   border-top: none;
-  padding-top: 10%;
-
-}
-
-.text-field{
-  width: 400px;
-  height: 40px;
-  padding: 2px 20px;
-  margin: 10px 0;
-  font-size: 12px;
-  border-radius: 2px;
-  border: 1px #b3b3b3 solid;
 }
 
 .no-deco-link{

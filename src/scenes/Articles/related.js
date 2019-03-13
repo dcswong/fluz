@@ -3,15 +3,21 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const RelatedWrapper = styled.div`
+  @media (min-width: 768px) {
+    margin-right: 2.4%;
+    width: 49%;
+  }
+  @media (max-width: 767px) {
+    margin-left: calc(2% + 1em);
+    margin-right: calc(2% + 1em);
+  }
   border-top: 1px solid var(--border-grey);
-  margin-right: 2.4%;
-  width: 49%;
 `;
 
 const Heading = styled.p`
-  padding-top: 7px;
+  padding-top: 10px;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 12px;
   color: var(--theme-grey);
 `;
 
@@ -23,12 +29,17 @@ const PostRow = styled.div`
 const PostLink = styled.a`
   color: var(--theme-grey);
   text-decoration: none;
-  
 `;
 
 const PostGrid = styled.div`
-  margin-top: 15px;
-  margin-right: 20px;
+ @media (min-width: 768px) {
+   margin-top: 5%;
+   margin-right: 3%;
+ }
+ @media (max-width: 767px) {
+   padding: 3%;
+   margin-bottom: 14%;
+ }
   color: var(--theme-grey);
 
   :hover {
@@ -38,13 +49,20 @@ const PostGrid = styled.div`
   }
 `;
 
+const GridPhoto = styled.img`
+  width: 100%;
+`;
+
 const Title = styled.div`
-  margin-top: 10px;
+  @media (min-width: 768px) {
+    line-height: 30px;
+  }
+  margin-top: 3%;
   font-size: 19px;
-  line-height: 30px;
 `;
 
 const Category = styled.div`
+  margin-top: 3%;
   font-size: 12px;
 `;
 
@@ -63,7 +81,7 @@ class Related extends Component {
           {stories.map((story, i) => (
             <PostLink href="/">
               <PostGrid key={i}>
-                <img src={story.image} width="285"/>
+                <GridPhoto src={story.image}/>
                 <Title>{story.title}</Title>
                 <Category>
                   {story.category} | {story.date}
