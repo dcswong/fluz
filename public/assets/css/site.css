@@ -1,14 +1,22 @@
+@font-face {
+   font-family: 'Open Sans';
+   font-style: normal;
+   font-weight: 400;
+   src:   url('/public/assets/fonts/OpenSans-Regular.ttf') format("truetype"),
+          url('/public/assets/fonts/OpenSans-Bold.ttf') format("truetype"),
+          url('/public/assets/fonts/OpenSans-BoldItalic.ttf') format("truetype"),
+          url('/public/assets/fonts/OpenSans-Light.ttf') ;
+}
+
 :root {
   --theme-black: #424242;
   --grey: #9b9b9b;
   --light-grey: #a6a6a6;
   --theme-grey: #333333;
   --border-grey: #979797;
-
 }
 
 html, body, #root {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #ffffff;
   color: var(--abt-black);
   height: 100%;

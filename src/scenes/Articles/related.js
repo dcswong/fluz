@@ -79,8 +79,8 @@ class Related extends Component {
         </Heading>
         <PostRow>
           {stories.map((story, i) => (
-            <PostLink href="/">
-              <PostGrid key={i}>
+            <PostLink href="/" key={i}>
+              <PostGrid>
                 <GridPhoto src={story.image}/>
                 <Title>{story.title}</Title>
                 <Category>

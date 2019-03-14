@@ -27,6 +27,7 @@
     "i18next-xhr-backend": "1.5.1",
     "js-base64": "^2.4.3",
     "lodash": "^4.17.11",
+    "lodash.orderby": "^4.6.0",
     "marked": "^0.3.6",
     "prop-types": "^15.7.2",
     "qs": "^6.5.2",
