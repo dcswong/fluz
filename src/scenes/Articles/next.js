@@ -48,7 +48,7 @@ const BorderLine = styled.div`
     display: none;
   }
   @media (max-width: 767px) {
-    margin-top: 20%;
+    margin-top: 22%;
     width: 100%;
   }
   border-top: 1px solid var(--border-grey);
