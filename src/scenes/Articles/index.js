@@ -48,6 +48,7 @@ const TitleLine1 = styled.p`
     text-align: center;
   }
   margin-bottom: 7%;
+  font-family: 'Open Sans', sans-serif;
 `;
 
 const TitleLine2 = styled.p`
@@ -82,6 +83,7 @@ const Imageblock = styled.div`
   }
   width: 50%;
   margin-left: 3%;
+  margin-top: calc(3% + 1em);
   margin-bottom: 3%;
 `;
 
@@ -96,13 +98,14 @@ const MarkdownText = styled.p`
   margin-top: 4%;
   font-size: 25px;
   width: 100%;
+  text-align: center;
 `;
 
 const Content = styled.div`
   @media (min-width: 768px) {
     text-align: center;
     font-size: 20px;
-    padding: 4% 25% 4% 30%;
+    padding: 2% 25% 4% 30%;
   }
   @media (max-width: 767px) {
     font-size: 15px;
@@ -111,7 +114,9 @@ const Content = styled.div`
 `;
 
 const BannerBlock = styled.div`
-  margin-bottom: 5%;
+  width: 100%;
+  margin-bottom: 3%;
+  text-align:center;
 `;
 
 const Description = styled.div`
@@ -138,6 +143,10 @@ const Name = styled.p`
 `;
 
 const YoutubeDiv = styled.div`
+  @media (min-width: 768px) {
+    text-align: center;
+    padding: 2% 25% 0% 30%;
+  }
   margin-bottom: 3%;
 `;
 
@@ -172,13 +181,15 @@ class Articles extends Component {
   }
 	renderBodySection(bodySection) {
 		const {description, medias, title} = bodySection;
+    console.log('title: ', title);
 		const bodyDescription = ValidationHelper.getYoutubeLinkAsFrame(description || '');
 		return (
 			<div>
 				<TextBlock>
-					<MarkdownText>
+					{title ? (
+            <MarkdownText>
 						{title}
-					</MarkdownText>
+					</MarkdownText>) : <div></div>}
 					<Content>
 						{ReactHtmlParser((bodyDescription || {}).text)}
 					</Content>
@@ -192,11 +203,11 @@ class Articles extends Component {
             )
 					})}
 				</div>
-        <YoutubeDiv>
+        {bodyDescription.youtube ? (<YoutubeDiv>
           {bodyDescription && bodyDescription.youtube &&
   					ReactHtmlParser(bodyDescription.youtube)
   				}
-        </YoutubeDiv>
+        </YoutubeDiv>) : null}
 			</div>
 		)
 	}
@@ -237,10 +248,7 @@ class Articles extends Component {
                   <i className="fab fa-facebook-f"/>
                 </SnsButton>
                 <SnsButton href="" target="blank">
-                  <i className="fab fa-twitter"/>
-                </SnsButton>
-                <SnsButton href="" target="blank">
-                  <i className="fab fa-pinterest-p"/>
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAB4AAAAeABBeqfSQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAANcSURBVEiJpZVPaBx1FMc/b3a7BApCzSlJlfyp3lI3+e0uBouuNKEionjIQYVi0Z48iIiSCiWaQ9NeLHj1HwoWIfRk0UMLiiIoO7/ZbdYExLK0h2RFGxWCuuxm5nnI7DIuM+l28y4zv/e+8/vwe/Pe+wn7tGKxmN7e3n4BeBY4rKqBiLiq+qnneT+0dbIfyPT09BERWQGyCZIPGo3GK2tra810v5BcLjelqleBwT1kLw8MDKSBU32dKIRcA+5t+8J0fQXsAC8B90dix+4aZIyZBq5GIap6cWJi4o2VlRUfoFAoDPq+XwEOh5L3U/uFAMue5725vr6ubcfGxsa/w8PDh4DHQteO0ytkcnLyEPAU8BmwCiAi56y1b8XpVdVvv4tIqu+qy+fz2VKpVImLzc/Pp2q12o+ACV2Xeqk6xxjzNHBCREaDIEiLyKqqfpz0Qa1WW4xAUNXLe56oUCiM+b7/OVCICQequux53lmg83+MMQvAckRXsdaaxGLI5/PZIAi+BR5MkIiIPDo0NPRLvV6vJkBuq+qJer2+FZu6EHKN/zfjdeAb4CDwXPhERAaTIEEQzJbL5RsQM4ISIEvj4+NL7T7JZrOjqVTqbeCvTCZzptlsvtoF+V1VZz3PW+0cvwfIQiaTea/ZbJ4H7vF9/51KpXITOtW1CJyNQoDj1tpqdO8OKAlirb2Qy+VeU9V3Q9/fwCXgH+Bx4GhE/5uIHHdd96fuTKXDVDwQBEH3gFyw1l4I37ci/oPA6e6NgF8dx5ktlUprMTFSxWIx3Wq1vgZGEyBsbm6ujoyMHAAeIf5q+d5xnCdKpdKNOAiAGGOeZ3estG3JWrsYJzbGTAIvqupRx3F2VPWmqn7ped4VIr0UZ2ngmQ5VxB0bG1uy1saKgyBwyuXy63ttuBfoSHuhql+0S7jbjDHngDPGmOuAq6pbrVbrfLVa/bMnkKr6IrtpF5HYaW6MWQYWwuVDwH0iMtcrBMARkU5TqeqpmZmZzl1TLBbTuVzuYgQC8IeIzFprvV4hsFsMx4DvIr5bwIfAAeBJIlMY2BKROdd1y3cDgbBUjTGfACfvoL3tOM5c0h10J3MAGo3GaVX9KEmkqiXg4X4h0NV8U1NTM47jnFRVIyIB8LOIXHZd9woQ9AsB+A9W9XE5xcL3lwAAAABJRU5ErkJggg==" height="12px" width="12px"/>
                 </SnsButton>
               </SocialMedia>
             </Titleblock>

@@ -34,7 +34,7 @@ class SocialMedia extends Component{
       <SocialGp>
           {lodash.map(social, (socials, index) => {
               return (
-                <div>
+                <div key={index}>
                   <SocialName href={socials.link}>{socials.name}</SocialName>
                 </div>
               )

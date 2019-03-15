@@ -26,6 +26,12 @@ var config = {
         test:   /\.css$/,
         loader: 'style-loader!css-loader'
       },
+      {
+        test: /\.(gif|eot|woff|woff2|ttf|svg)$/,
+         loaders: [
+           'url-loader'
+         ]
+      }
     ]
   },
   devServer: {

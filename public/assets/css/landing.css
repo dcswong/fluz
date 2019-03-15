@@ -3,11 +3,15 @@
   #grid3-wrapper {
     display: flex;
     justify-content: center;
-    margin-bottom: calc(2% + 1.3em);
+    padding-left: calc(1% + 0.7em);
+    padding-right: calc(1% + 0.7em);
+    padding-bottom: calc(2% + 1.3em);
   }
   #grid2-wrapper {
     width: 100%;
     justify-content: center;
+    padding-left: calc(2% + 3em);
+    padding-right: calc(2% + 3em);
     margin-bottom: calc(4% + 1.3em);
     display: flex;
   }
@@ -43,6 +47,7 @@
 }
 
 #grid3-wrapper .image-grid .title-text {
+  margin-top: 3%;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 20px;
@@ -50,9 +55,12 @@
 
 #grid3-wrapper .image-grid .category-text {
   font-size: 10px;
+  color: #adadad;
+  font-weight: 100;
 }
 
 #grid2-wrapper .image-grid .title-text {
+  margin-top: 3%;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 20px;
@@ -63,4 +71,7 @@
   font-size: 10px;
   margin-right: 40px;
   margin-left: 5px;
+  color: #adadad;
+  font-weight: 100;
+
 }

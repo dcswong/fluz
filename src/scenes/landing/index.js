@@ -23,7 +23,7 @@ class Landing extends Component {
     .then(response => response.json())
     .then(result => this.setState({articles: (result.data || {}).posts || []}));
 
-    fetch('/api/articles?tags=features', {
+    fetch('/api/articles?tags=f1', {
       method: 'GET'
     })
     .then(response => response.json())

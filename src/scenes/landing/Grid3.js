@@ -23,7 +23,7 @@ class Grid3 extends Component {
                 }}></div>}
               </RatioWrapper>
               <p className="title-text">{post.sections[0].title}</p>
-              <b className="category-text">{post.tags.length > 0 ? post.tags.join(' ') + ' | ' + post.time : post.time}</b>
+              <b className="category-text">{post.tags.length > 0 ? post.tags.join(' ') + ' | ' + post.time.split('T').shift() : post.time.split('T').shift()}</b>
             </a>
           </div>
         ))}
