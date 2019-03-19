@@ -51,10 +51,11 @@ class Header extends Component {
 				})
 			}
 		});
-    }
+  }
 
   render () {
     const categories = this.state.categories || [];
+    const {user} = this.props;
 
     return (
       <nav id="navbar" className="navbar navbar-default navbar-expand-md">
@@ -63,7 +64,7 @@ class Header extends Component {
               <img height="25px" width="25px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAADmwAAA5sBPN8HMQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABYSURBVGiB7dbBDYAwDATBGKWk9AdUHorAkq1opoK7344BQIFYaz3VIzLMvfddPSLDVT0giyPdzIh4q0cAAElkfDfHRKMj3ch4ADiJjO/mmGh0pBsZD8AfH0ASD4ILc/QhAAAAAElFTkSuQmCC"/>
             </MenuBtn>
           </div>*/}
-          <Sidebar categories={categories}/>
+          <Sidebar categories={categories} user={user}/>
           <LogoDiv>
             <a href="/">
               <Logo src="../assets/imgs/F-logo.png"/>

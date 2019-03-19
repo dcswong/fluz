@@ -10,17 +10,32 @@ import RegisterModal from '../../components/RegisterModal';
 
 import Fluzfooter from '../../scenes/Fluzfooter';
 
-class Frame extends Component {
+import API from '../../helpers/api';
 
+class Frame extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {}
+  }
+  componentDidMount() {
+    // get customer info
+    API.get('/api/consumers/session', res => {
+        const user = (((res || {}).data || {}).consumers || []).shift() || null;
+        API.get('/api/credentials?type=email', result => {
+          if(result.result) {
+            user['email'] = (((result.data || {}).tokens || [])[0] || {}).token
+          }
+      })
+      this.setState({ user });
+    });
+  }
   render () {
 
     return (
       <React.Fragment>
         <div className="frame">
-          <Header/>
-          <LoginModal/>
-          <RegisterModal/>
-            {React.Children.map(this.props.children, (child) => React.cloneElement(child))}
+          <Header user={this.state.user}/>
+          {React.Children.map(this.props.children, (child) => React.cloneElement(child))}
           <Fluzfooter/>
         </div>
       </React.Fragment>

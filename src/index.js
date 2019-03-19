@@ -26,10 +26,11 @@ $(document).ready(() => render((
         <Frame>
           <Switch>
             <Route exact path="/" component={ Landing }/>
+            <Route exact path="/:tags" component={ Landing }/>
             <Route exact path="/category" component={ Category }/>
+            <Route exact path="/validate/:key" component={ Landing }/>
             <Route exact path="/articles/:id" component={ Articles }/>
             <Route exact path="/articlesH" component={ ArticlesH }/>
-
           </Switch>
         </Frame>
       </Router>

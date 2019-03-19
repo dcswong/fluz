@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link, NavLink, withRouter } from 'react-router-dom';
-
+import lodash from 'lodash';
 import styled from 'styled-components';
 
 import Feature from './Feature';
@@ -9,26 +9,24 @@ import Trend from '../Trend';
 import Grid2 from './Grid2';
 import AdBanner from '../AdBanner';
 
+import LandingHelper from './helpers/LandingHelper';
+
 class Landing extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
-    this.getArticles = this.getArticles.bind(this);
+    this.state = {
+      articles: [],
+      features: []
+    };
   }
 
   getArticles() {
-    fetch('/api/articles', {
-      method: 'GET'
-    })
-    .then(response => response.json())
-    .then(result => this.setState({articles: (result.data || {}).posts || []}));
-
-    fetch('/api/articles?tags=f1', {
-      method: 'GET'
-    })
-    .then(response => response.json())
-    .then(result => this.setState({features: (result.data || {}).posts || []}));
-    console.log(this.state.features);
+    LandingHelper.getArticles((result) => {
+      this.setState({
+        articles: result.articles,
+        features: result.features,
+      },)
+    }, this.props.match.params.keywords);
   }
 
   componentDidMount() {
@@ -37,11 +35,23 @@ class Landing extends Component {
 
   componentWillMount() {
     this.getArticles();
+    if(this.props.location.search) {
+      const params = new URLSearchParams(this.props.location.search); 
+      const tags = params.get('state');
+      if(tags == 1) {
+        // success
+        this.props.history.push('/')
+      }
+      if(tags == 2) {
+        //fail
+        this.props.history.push('/')
+      }
+    }
   }
 
   render() {
-    const articles = this.state.articles || [];
-    const features = this.state.features || [];
+    let articles = this.state.articles || [];
+    let features = this.state.features || [];
 
     return (
       <div id="landing-wrapper">
