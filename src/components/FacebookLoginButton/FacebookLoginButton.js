@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
 import styled from 'styled-components';
+import hash from 'object-hash';
 
 const FbBtn = styled.button`
 @media (min-width: 768px) {
@@ -24,38 +25,29 @@ const FbBtn = styled.button`
 class FacebookLoginButton extends Component {
 
     responseFacebook(response) {
-        console.log(response)
-        // this.createOrLoginUser(response)
-    }
-
-    createOrLoginUser(user) {
-        const formData = {
-            "first_name": "",
-            "last_name": "",
-            "biography": "",
-            "phone": "",
-            "email": ""
+        const {first_name, last_name, email} = response;
+        const user = {
+            first_name: first_name,
+            last_name: last_name,
+            email: email,
+            passwd: hash(email),
+            confpasswd: hash(email)
         }
-        fetch('/api/customers', {
-          method: 'POST',
-          body    : JSON.stringify(formData)
-        })
-        .then(response => response.json())
-        .then(result => {
-            console.log(result)
-        });
-
+        this.props.responseFacebook(user)
     }
 
     render() {
         return (
             <FacebookLogin
+                autoLoad={true}
                 appId="262726651112348"
-                autoLoad
+                fields="first_name,last_name,email"
                 callback={(response) => this.responseFacebook(response)}
-                render={renderProps => (
-                    <FbBtn onClick={renderProps.onClick}>Facebook Login</FbBtn>
-                )}
+                render={renderProps => {
+                    return (
+                        <FbBtn onClick={renderProps.onClick}>Facebook Login</FbBtn>
+                    )
+                }}
             />
         )
     }

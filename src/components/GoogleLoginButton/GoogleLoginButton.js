@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { GoogleLogin } from 'react-google-login';
 import styled from 'styled-components';
+import hash from 'object-hash';
 
 const GoogleBtn = styled.button`
 @media (min-width: 768px) {
@@ -28,27 +29,16 @@ const GoogleBtn = styled.button`
 class GoogleLoginButton extends Component {
 
     responseGoogle(response) {
-        console.log(response)
-        // this.createOrLoginUser(response)
-    }
-
-    createOrLoginUser(user) {
-        const formData = {
-            "first_name": "",
-            "last_name": "",
-            "biography": "",
-            "phone": "",
-            "email": ""
+        console.log(response.profileObj)
+        const {email, familyName, givenName} = response.profileObj;
+        const user = {
+            first_name: givenName,
+            last_name: familyName,
+            email: email,
+            passwd: hash(email),
+            confpasswd: hash(email)
         }
-        fetch('/api/customers', {
-          method: 'POST',
-          body    : JSON.stringify(formData)
-        })
-        .then(response => response.json())
-        .then(result => {
-            console.log(result)
-        });
-
+        this.props.responseGoogle(user)
     }
 
     render() {
@@ -60,7 +50,7 @@ class GoogleLoginButton extends Component {
                     <GoogleBtn onClick={renderProps.onClick}>Sign In With Google</GoogleBtn>
                 )}
                 onSuccess={(response) => this.responseGoogle(response)}
-                onFailure={(response) => this.responseGoogle(response)}
+                onFailure={(response) => {}}
             />
         )
     }
