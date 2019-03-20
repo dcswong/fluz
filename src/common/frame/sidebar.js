@@ -24,6 +24,9 @@ const CatName = styled.a`
   color: #fff;
   font-size: 30px;
   font-weight: 300;
+  :focus {
+    outline: none;
+  }
 `;
 
 const Subtitle = styled.div`

@@ -26,12 +26,6 @@ const Logo = styled.img`
   margin: 0 auto;
   width: 80px;
   height: 20px;
-  @media (min-width: 768px) {
-    margin-left: 2%;
-  }
-  @media (max-width: 767px) {
-    margin-left: 3%;
-  }
 `;
 
 class Header extends Component {
