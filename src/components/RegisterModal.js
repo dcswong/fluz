@@ -88,14 +88,41 @@ const CloseTag = styled.span`
 class RegisterModal extends Component{
   constructor (props) {
     super(props);
-
+    this.state = {}
+    
     this.swapModal = this.swapModal.bind(this);
   }
 
   swapModal() {
-
     $('#regModal').modal('hide');
     $('#loginModal').modal('show');
+    $('#recoverModal').modal('hide');
+  }
+
+  onChangeRegisterInfo(value, field) {
+    let user = this.state.user || {}
+    user[field] = value
+    this.setState({user});
+  }
+
+  onClickRegister() {
+    const {user} = this.state;
+    if(!user['first_name']) {
+      return;
+    }
+    if(!user['last_name']) {
+      return;
+    }
+    if(!user['email']) {
+      return;
+    }
+    if(!user['passwd']) {
+      return;
+    }
+    if(!user['confpasswd']) {
+      return;
+    }
+    this.props.createUser(user)
   }
 
   render(){
@@ -116,8 +143,11 @@ class RegisterModal extends Component{
                     <Logo src="../assets/imgs/F-logo.png"/>
                   </LogoDiv>
                   <LoginInfo>
-                    <input type="email" className="text-field" placeholder="電郵地址/手機號碼"></input>
-                    <input type="email" className="text-field" placeholder="請輸入密碼"></input>
+                    <input type="email" className="text-field" placeholder="電郵地址/手機號碼" onChange={(event) => this.onChangeLoginInfo(event.target.value, 'email')}></input>
+                    <input type="text" className="text-field" placeholder="姓" onChange={(event) => this.onChangeLoginInfo(event.target.value, 'last_name')}></input>
+                    <input type="text" className="text-field" placeholder="名" onChange={(event) => this.onChangeLoginInfo(event.target.value, 'first_name')}></input>
+                    <input type="password" className="text-field" placeholder="請輸入密碼" onChange={(event) => this.onChangeLoginInfo(event.target.value, 'passwd')}></input>
+                    <input type="password" className="text-field" placeholder="請再次輸入密碼" onChange={(event) => this.onChangeLoginInfo(event.target.value, 'confpasswd')}></input>
                   </LoginInfo>
                   <LoginSetting>
                   </LoginSetting>

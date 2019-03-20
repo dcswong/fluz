@@ -3,6 +3,7 @@ import lodash from 'lodash';
 import ReactHtmlParser from 'react-html-parser';
 import { Link, NavLink, withRouter } from 'react-router-dom';
 import styled from 'styled-components';
+import Clipboard from 'react-clipboard.js';
 
 import ValidationHelper from '../../helpers/ValidationHelper';
 import Stories from './stories';
@@ -67,7 +68,7 @@ const SocialMedia = styled.div`
   }
 `;
 
-const SnsButton = styled.a`
+const SnsButton = styled.div`
   display: inline-block;
   margin-right: 20px;
   color: var(--theme-grey);
@@ -181,7 +182,6 @@ class Articles extends Component {
   }
 	renderBodySection(bodySection) {
 		const {description, medias, title} = bodySection;
-    console.log('title: ', title);
 		const bodyDescription = ValidationHelper.getYoutubeLinkAsFrame(description || '');
 		return (
 			<div>
@@ -244,12 +244,18 @@ class Articles extends Component {
       					)
       				})}
               <SocialMedia>
-                <SnsButton href="" target="blank">
+                <SnsButton onClick={() => {
+                  window.open(`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`)
+                }}>
                   <i className="fab fa-facebook-f"/>
                 </SnsButton>
-                <SnsButton href="" target="blank">
-                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAB4AAAAeABBeqfSQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAANcSURBVEiJpZVPaBx1FMc/b3a7BApCzSlJlfyp3lI3+e0uBouuNKEionjIQYVi0Z48iIiSCiWaQ9NeLHj1HwoWIfRk0UMLiiIoO7/ZbdYExLK0h2RFGxWCuuxm5nnI7DIuM+l28y4zv/e+8/vwe/Pe+wn7tGKxmN7e3n4BeBY4rKqBiLiq+qnneT+0dbIfyPT09BERWQGyCZIPGo3GK2tra810v5BcLjelqleBwT1kLw8MDKSBU32dKIRcA+5t+8J0fQXsAC8B90dix+4aZIyZBq5GIap6cWJi4o2VlRUfoFAoDPq+XwEOh5L3U/uFAMue5725vr6ubcfGxsa/w8PDh4DHQteO0ytkcnLyEPAU8BmwCiAi56y1b8XpVdVvv4tIqu+qy+fz2VKpVImLzc/Pp2q12o+ACV2Xeqk6xxjzNHBCREaDIEiLyKqqfpz0Qa1WW4xAUNXLe56oUCiM+b7/OVCICQequux53lmg83+MMQvAckRXsdaaxGLI5/PZIAi+BR5MkIiIPDo0NPRLvV6vJkBuq+qJer2+FZu6EHKN/zfjdeAb4CDwXPhERAaTIEEQzJbL5RsQM4ISIEvj4+NL7T7JZrOjqVTqbeCvTCZzptlsvtoF+V1VZz3PW+0cvwfIQiaTea/ZbJ4H7vF9/51KpXITOtW1CJyNQoDj1tpqdO8OKAlirb2Qy+VeU9V3Q9/fwCXgH+Bx4GhE/5uIHHdd96fuTKXDVDwQBEH3gFyw1l4I37ci/oPA6e6NgF8dx5ktlUprMTFSxWIx3Wq1vgZGEyBsbm6ujoyMHAAeIf5q+d5xnCdKpdKNOAiAGGOeZ3estG3JWrsYJzbGTAIvqupRx3F2VPWmqn7ped4VIr0UZ2ngmQ5VxB0bG1uy1saKgyBwyuXy63ttuBfoSHuhql+0S7jbjDHngDPGmOuAq6pbrVbrfLVa/bMnkKr6IrtpF5HYaW6MWQYWwuVDwH0iMtcrBMARkU5TqeqpmZmZzl1TLBbTuVzuYgQC8IeIzFprvV4hsFsMx4DvIr5bwIfAAeBJIlMY2BKROdd1y3cDgbBUjTGfACfvoL3tOM5c0h10J3MAGo3GaVX9KEmkqiXg4X4h0NV8U1NTM47jnFRVIyIB8LOIXHZd9woQ9AsB+A9W9XE5xcL3lwAAAABJRU5ErkJggg==" height="12px" width="12px"/>
-                </SnsButton>
+                <Clipboard
+                    component="a"
+                    button-href="javascript:;"
+                    data-clipboard-text={window.location.href}
+                >
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAB4AAAAeABBeqfSQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAANcSURBVEiJpZVPaBx1FMc/b3a7BApCzSlJlfyp3lI3+e0uBouuNKEionjIQYVi0Z48iIiSCiWaQ9NeLHj1HwoWIfRk0UMLiiIoO7/ZbdYExLK0h2RFGxWCuuxm5nnI7DIuM+l28y4zv/e+8/vwe/Pe+wn7tGKxmN7e3n4BeBY4rKqBiLiq+qnneT+0dbIfyPT09BERWQGyCZIPGo3GK2tra810v5BcLjelqleBwT1kLw8MDKSBU32dKIRcA+5t+8J0fQXsAC8B90dix+4aZIyZBq5GIap6cWJi4o2VlRUfoFAoDPq+XwEOh5L3U/uFAMue5725vr6ubcfGxsa/w8PDh4DHQteO0ytkcnLyEPAU8BmwCiAi56y1b8XpVdVvv4tIqu+qy+fz2VKpVImLzc/Pp2q12o+ACV2Xeqk6xxjzNHBCREaDIEiLyKqqfpz0Qa1WW4xAUNXLe56oUCiM+b7/OVCICQequux53lmg83+MMQvAckRXsdaaxGLI5/PZIAi+BR5MkIiIPDo0NPRLvV6vJkBuq+qJer2+FZu6EHKN/zfjdeAb4CDwXPhERAaTIEEQzJbL5RsQM4ISIEvj4+NL7T7JZrOjqVTqbeCvTCZzptlsvtoF+V1VZz3PW+0cvwfIQiaTea/ZbJ4H7vF9/51KpXITOtW1CJyNQoDj1tpqdO8OKAlirb2Qy+VeU9V3Q9/fwCXgH+Bx4GhE/5uIHHdd96fuTKXDVDwQBEH3gFyw1l4I37ci/oPA6e6NgF8dx5ktlUprMTFSxWIx3Wq1vgZGEyBsbm6ujoyMHAAeIf5q+d5xnCdKpdKNOAiAGGOeZ3estG3JWrsYJzbGTAIvqupRx3F2VPWmqn7ped4VIr0UZ2ngmQ5VxB0bG1uy1saKgyBwyuXy63ttuBfoSHuhql+0S7jbjDHngDPGmOuAq6pbrVbrfLVa/bMnkKr6IrtpF5HYaW6MWQYWwuVDwH0iMtcrBMARkU5TqeqpmZmZzl1TLBbTuVzuYgQC8IeIzFprvV4hsFsMx4DvIr5bwIfAAeBJIlMY2BKROdd1y3cDgbBUjTGfACfvoL3tOM5c0h10J3MAGo3GaVX9KEmkqiXg4X4h0NV8U1NTM47jnFRVIyIB8LOIXHZd9woQ9AsB+A9W9XE5xcL3lwAAAABJRU5ErkJggg==" height="12px" width="12px"/>
+                </Clipboard>
               </SocialMedia>
             </Titleblock>
             <Imageblock>

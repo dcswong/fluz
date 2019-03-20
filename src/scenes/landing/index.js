@@ -15,16 +15,14 @@ class Landing extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      articles: [],
-      features: []
     };
   }
 
   getArticles() {
     LandingHelper.getArticles((result) => {
       this.setState({
-        articles: result.articles,
-        features: result.features,
+        features: lodash.cloneDeep(result.features),
+        articles: lodash.cloneDeep(result.articles)
       },)
     }, this.props.match.params.keywords);
   }

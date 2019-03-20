@@ -3,6 +3,9 @@ import { Link, NavLink, withRouter } from 'react-router-dom';
 import SearchBar from '../../scenes/widgets/searchBar';
 import styled from 'styled-components';
 import Sidebar from './sidebar';
+import SearchSidebar from './SearchSidebar';
+import UIHelper from '../../helpers/UIHelper';
+
 /*const MenuBtn = styled.button`
   background: none;
   border: none;
@@ -39,6 +42,14 @@ class Header extends Component {
     };
   }
 
+  onClickSearch() {
+    this.SearchSidebar.openMenu()
+  }
+  
+  onClickMenu() {
+    this.Sidebar.openMenu()
+  }
+
   componentDidMount() {
     fetch(`/api/shops/session`, {
 			method: 'GET'
@@ -56,7 +67,7 @@ class Header extends Component {
   render () {
     const categories = this.state.categories || [];
     const {user} = this.props;
-
+    
     return (
       <nav id="navbar" className="navbar navbar-default navbar-expand-md">
           {/*<div className="collapse navbar-collapse justify-content-md-between" id="navbar-content">
@@ -64,12 +75,20 @@ class Header extends Component {
               <img height="25px" width="25px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAADmwAAA5sBPN8HMQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABYSURBVGiB7dbBDYAwDATBGKWk9AdUHorAkq1opoK7344BQIFYaz3VIzLMvfddPSLDVT0giyPdzIh4q0cAAElkfDfHRKMj3ch4ADiJjO/mmGh0pBsZD8AfH0ASD4ILc/QhAAAAAElFTkSuQmCC"/>
             </MenuBtn>
           </div>*/}
-          <Sidebar categories={categories} user={user}/>
+          <div onClick={this.onClickMenu.bind(this)}>
+            {UIHelper.renderSVG('menu', {height: 23, cursor: 'pointer'})}
+          </div>
+          
           <LogoDiv>
             <a href="/">
               <Logo src="../assets/imgs/F-logo.png"/>
             </a>
           </LogoDiv>
+          <div onClick={this.onClickSearch.bind(this)}>
+            {UIHelper.renderSVG('search-black', {height: 23, cursor: 'pointer'})}
+          </div>
+          <Sidebar ref={refs => this.Sidebar = refs} categories={categories} user={user}/>
+          <SearchSidebar ref={refs => this.SearchSidebar = refs}/>
       </nav>
     )
   }

@@ -30,7 +30,6 @@ class Frame extends Component {
     });
   }
   render () {
-
     return (
       <React.Fragment>
         <div className="frame">

@@ -54,7 +54,6 @@ function getArticles(cb, keyword) {
                 article.tags = lodash.drop(article.tags)
                 article.tags = lodash.slice(article.tags, 0, 3)
             })
-
             cb && cb({features, articles})
         }
         else {

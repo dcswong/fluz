@@ -23,16 +23,16 @@ import ArticlesH from './scenes/ArticlesH';
 $(document).ready(() => render((
     <I18nextProvider i18n={ i18n }>
       <Router>
-        <Frame>
-          <Switch>
-            <Route exact path="/" component={ Landing }/>
-            <Route exact path="/:tags" component={ Landing }/>
-            <Route exact path="/category" component={ Category }/>
-            <Route exact path="/validate/:key" component={ Landing }/>
-            <Route exact path="/articles/:id" component={ Articles }/>
-            <Route exact path="/articlesH" component={ ArticlesH }/>
-          </Switch>
-        </Frame>
+          <Frame>
+            <Switch>
+              <Route exact path="/" component={ Landing }/>
+              <Route exact path="/:keywords" component={ Landing }/>
+              <Route exact path="/category" component={ Category }/>
+              <Route exact path="/validate/:key" component={ Landing }/>
+              <Route exact path="/articles/:id" component={ Articles }/>
+              <Route exact path="/articlesH" component={ ArticlesH }/>
+            </Switch>
+          </Frame>
       </Router>
     </I18nextProvider>
 ), document.getElementById('root')))

@@ -89,12 +89,42 @@ const CloseTag = styled.span`
 class LoginModal extends Component{
   constructor (props) {
     super(props);
+    this.state = {}
+
     this.swapToRegModal = this.swapToRegModal.bind(this);
   }
 
-  swapToRegModal() {
+  swapToRegModal() {   
     $('#loginModal').modal('hide');
     $('#regModal').modal('show');
+    $('#recoverModal').modal('hide');
+  }
+
+  swapToRecoverModal() {   
+    $('#loginModal').modal('hide');
+    $('#regModal').modal('hide');
+    $('#recoverModal').modal('show');
+  }
+
+  responseSocialMedia(user) {
+    this.props.createUser(user)
+  }
+
+  onChangeLoginInfo(value, field) {
+    let user = this.state.user || {}
+    user[field] = value
+    this.setState({user});
+  }
+
+  onClickLogin() {
+    const {user} = this.state;
+    if(!user['email']) {
+      return;
+    }
+    if(!user['passwd']) {
+      return;
+    }
+    this.props.loginUser(user)
   }
 
   render(){
@@ -115,21 +145,26 @@ class LoginModal extends Component{
                     <Logo src="../assets/imgs/F-logo.png"/>
                   </LogoDiv>
                   <LoginInfo>
-                    <input type="email" className="text-field" placeholder="電郵地址/手機號碼"></input>
-                    <input type="email" className="text-field" placeholder="請輸入密碼"></input>
+                    <input type="email" className="text-field" placeholder="電郵地址/手機號碼" onChange={(event) => this.onChangeLoginInfo(event.target.value, 'email')}></input>
+                    <input type="password" className="text-field" placeholder="請輸入密碼" onChange={(event) => this.onChangeLoginInfo(event.target.value, 'passwd')}></input>
                   </LoginInfo>
                   <LoginSetting>
                     <div>
                       <Remember type="checkbox"/>記住用戶名
                     </div>
-                    <a href="">忘記密碼</a>
+                    <a onClick={this.swapToRecoverModal.bind(this)}>忘記密碼</a>
                   </LoginSetting>
                   <div>
-                    <LoginBtn className="loginbtn-top">登入</LoginBtn>
+                    <LoginBtn className="loginbtn-top" onClick={this.onClickLogin.bind(this)}>登入</LoginBtn>
                   </div>
                   <div>
-                    <FacebookLoginButton className="fb-login-button"/>
-                    <GoogleLoginButton/>
+                    <FacebookLoginButton 
+                      className="fb-login-button"
+                      responseFacebook={(response) => this.responseSocialMedia(response)}
+                    />
+                    <GoogleLoginButton
+                      responseGoogle={(response) => this.responseSocialMedia(response)}
+                    />
                   </div>
                   <div>
                     <LoginBtn className="loginbtn-bottom" onClick={this.swapToRegModal}>立即加入</LoginBtn>

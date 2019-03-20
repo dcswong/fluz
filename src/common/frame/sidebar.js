@@ -7,6 +7,7 @@ import RegisterModal from '../../components/RegisterModal';
 import RecoverModal from '../../components/RecoverModal';
 import API from '../../helpers/api';
 
+
 const GlobalStyle = createGlobalStyle`
   .bm-menu {
     width: 100%;
@@ -21,6 +22,8 @@ const CatName = styled.a`
   width: fit-content;
   text-transform: capitalize;
   color: #fff;
+  font-size: 30px;
+  font-weight: 300;
 `;
 
 const Subtitle = styled.div`
@@ -52,6 +55,10 @@ class Sidebar extends Component {
 
   closeMenu () {
     this.setState({menuOpen: false})
+  }
+
+  openMenu () {
+    this.setState({menuOpen: true})
   }
 
   createUser(user) {
