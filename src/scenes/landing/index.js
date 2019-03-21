@@ -50,7 +50,7 @@ class Landing extends Component {
   render() {
     let articles = this.state.articles || [];
     let features = this.state.features || [];
-
+    console.log('success')
     return (
       <div id="landing-wrapper">
         <Feature posts={features}/>
