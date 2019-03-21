@@ -3,6 +3,12 @@ import { Link, NavLink, withRouter } from 'react-router-dom';
 
 import RatioWrapper from '../../common/ratiowrapper';
 
+import styled from 'styled-components';
+
+const textBox = styled.a`
+  display: flex;
+`;
+
 class Grid3 extends Component {
 
   render() {
@@ -10,7 +16,9 @@ class Grid3 extends Component {
     var posts = this.props.posts;
 
     return (
+    <center>
       <div id="grid3-wrapper">
+        <div className="row">
         {posts.map((post, i) => (
           <div className="image-grid col-md-4" key={i}>
             <a href={"/articles/" + post.id}>
@@ -27,7 +35,9 @@ class Grid3 extends Component {
             </a>
           </div>
         ))}
+        </div>
       </div>
+    </center>
     )
   }
 

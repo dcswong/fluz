@@ -33,6 +33,7 @@ class Grid2 extends Component {
             </a>
           </div>
         ))}
+        </div>
       </div>
     )
   }
